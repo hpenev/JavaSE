@@ -1,0 +1,19 @@
+package arraysHomework;
+
+import java.util.Scanner;
+
+public class Task09 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter array length: ");
+		int arrayLength = sc.nextInt();
+
+		int[] array = new int[arrayLength];
+		for (int i = 0; i < arrayLength; i++) {
+			System.out.print("Enter a number: ");
+			array[i] = sc.nextInt();
+		}
+		sc.close();
+
+	}
+}

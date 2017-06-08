@@ -1,0 +1,13 @@
+package advancedLoopsExercises;
+
+import java.util.Scanner;
+
+//Write a program that enters an integer n (1 ≤ n ≤ 12) and calculates and prints n! = 1 * 2 * ... * n (n factorial).
+public class Task08 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		sc.close();
+	}
+}

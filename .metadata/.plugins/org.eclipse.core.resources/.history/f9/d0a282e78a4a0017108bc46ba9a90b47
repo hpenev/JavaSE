@@ -1,0 +1,30 @@
+package loopsBookChapter16;
+
+import java.util.Scanner;
+
+public class Task09 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a nubmer: ");
+		int number = sc.nextInt();
+		sc.close();
+		
+		if (number>0) {
+			
+		}
+		int spaces = number - 1;
+		int stars = 1;
+		for (int i = 1; i <= number; i++) {
+			for (int sp = 1; sp <= spaces; sp++) {
+				System.out.print(" ");
+			}
+			for (int st = 1; st <= stars; st++) {
+				System.out.print("*");
+			}
+			spaces--;
+			stars += 2;
+			System.out.println();
+		}
+	}
+}

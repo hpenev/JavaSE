@@ -1,0 +1,19 @@
+package loopsBookChapter16;
+
+import java.util.Scanner;
+
+public class Task10 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a card number:");
+		int number = sc.nextInt();
+		sc.close();
+
+		for (int card = number; card <= 52; card++) {
+
+			int cardNumber = (card - 1) / 4 + 1;
+			int cardSuit = card % 4;
+		}
+	}
+}

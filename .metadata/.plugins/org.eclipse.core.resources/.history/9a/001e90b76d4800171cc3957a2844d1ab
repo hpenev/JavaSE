@@ -1,0 +1,8 @@
+package advancedLoopsExercises;
+
+// numbers from 1 to N 
+public class Task01 {
+	public static void main(String[] args) {
+
+	}
+}

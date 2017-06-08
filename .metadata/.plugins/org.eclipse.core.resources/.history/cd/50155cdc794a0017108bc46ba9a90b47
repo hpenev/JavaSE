@@ -1,0 +1,101 @@
+package loopsBookChapter16;
+
+import java.util.Scanner;
+
+public class Task06 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Дата на раждане на Иван");
+		System.out.print("Въведете ден: ");
+		int ivanDay = sc.nextInt();
+		System.out.print("Въведете месец: ");
+		int ivanMonth = sc.nextInt();
+		System.out.print("Въведете година: ");
+		int ivanYear = sc.nextInt();
+
+		System.out.println("Дата на раждане на Петър");
+		System.out.print("Въведете ден: ");
+		int peterDay = sc.nextInt();
+		System.out.print("Въведете месец: ");
+		int peterMonth = sc.nextInt();
+		System.out.print("Въведете година: ");
+		int peterYear = sc.nextInt();
+		sc.close();
+
+		boolean isLean = false;
+		int diffDaysInYears = 0;
+		int diffDaysInMonths = 0;
+		int diffDays = 0;
+
+		while (ivanDay < peterDay) {
+		}
+
+		for (int i = Math.min(peterYear, ivanYear); i < Math.max(peterYear, ivanYear); i++) {
+			if ((i % 4 == 0) && (!(i % 100 == 0) || (i % 400 == 0))) {
+				isLean = true;
+			} else {
+				isLean = false;
+			}
+
+			if (isLean) {
+				diffDaysInYears += 366;
+			} else {
+				diffDaysInYears += 365;
+			}
+		}
+
+		for (int m = Math.min(peterMonth, ivanMonth); m < Math.max(peterMonth, ivanMonth); m++) {
+			int daysInCurrentMonth = 0;
+			switch (m) {
+			case 1:
+				daysInCurrentMonth = 31;
+				break;
+			case 2:
+				daysInCurrentMonth = 28;
+				break;
+			case 3:
+				daysInCurrentMonth = 31;
+				break;
+			case 4:
+				daysInCurrentMonth = 30;
+				break;
+			case 5:
+				daysInCurrentMonth = 31;
+				break;
+			case 6:
+				daysInCurrentMonth = 30;
+				break;
+			case 7:
+				daysInCurrentMonth = 31;
+				break;
+			case 8:
+				daysInCurrentMonth = 31;
+				break;
+			case 9:
+				daysInCurrentMonth = 30;
+				break;
+			case 10:
+				daysInCurrentMonth = 31;
+				break;
+			case 11:
+				daysInCurrentMonth = 30;
+				break;
+			case 12:
+				daysInCurrentMonth = 31;
+				break;
+			default:
+				daysInCurrentMonth = 0;
+				break;
+			}
+
+			diffDaysInMonths += daysInCurrentMonth;
+		}
+
+		for (int i = Math.min(peterDay, ivanDay); i < Math.max(peterDay, ivanDay); i++) {
+			diffDays += 1;
+		}
+
+		System.out.println(diffDaysInYears + diffDaysInMonths + diffDays);
+
+	}
+}

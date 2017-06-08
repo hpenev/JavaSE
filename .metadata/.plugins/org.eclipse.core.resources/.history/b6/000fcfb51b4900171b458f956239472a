@@ -1,0 +1,28 @@
+package loopsExercises;
+
+import java.util.Scanner;
+
+public class Task11 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+
+		int oddSum = 0;
+		int oddMin = Integer.MAX_VALUE;
+		int oddMax = Integer.MIN_VALUE;
+		int evenSum = 0;
+		int evenMin = Integer.MAX_VALUE;
+		int evenMax = Integer.MIN_VALUE;
+
+		for (int i = 1; i <= n; i++) {
+			int currentNumber = sc.nextInt();
+
+			if (i % 2 == 0) {
+				evenSum+=currentNumber;
+			}
+
+		}
+		sc.close();
+	}
+}

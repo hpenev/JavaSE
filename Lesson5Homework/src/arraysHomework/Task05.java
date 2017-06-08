@@ -1,0 +1,29 @@
+package arraysHomework;
+
+public class Task05 {
+	public static void main(String[] args) {
+
+		// if simultaneously should declare and initialize array
+		// int[] array = new int[] { 0, 3, 6, 9, 12, 15, 18, 21, 24, 27 };
+
+		// if simultaneously should declare and initialize array with default
+		// values
+		int[] array = new int[10];
+
+		// Assign new values to array
+		for (int i = 0; i < array.length; i++) {
+			array[i] = i * 3;
+		}
+
+		// print array
+		System.out.print("[");
+		for (int i = 0; i < array.length; i++) {
+			if (i != array.length - 1) {
+				System.out.print(array[i] + ", ");
+			} else {
+				System.out.print(array[i]);
+			}
+		}
+		System.out.println("]");
+	}
+}

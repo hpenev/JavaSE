@@ -1,0 +1,34 @@
+package arraysHomework;
+
+import java.util.Scanner;
+
+public class Task10 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int[] array = new int[7];
+		for (int i = 0; i < array.length; i++) {
+			System.out.print("Enter a number: ");
+			array[i] = sc.nextInt();
+		}
+		sc.close();
+
+		int sum = 0;
+		int avarageValue = 0;
+		for (int i = 0; i < array.length; i++) {
+			sum += array[i];
+		}
+		avarageValue = sum/array.length
+		System.out.println("Middle value: " + avarageValue);
+
+		int nerestValue = array[0];
+
+		for (int i = 0; i < array.length; i++) {
+			int currentValue = array[i];
+			if (currentValue - avarageValue <= nerestValue - avarageValue) {
+				nerestValue = currentValue;
+			}
+		}
+		System.out.println("Nearest value: " + avarageValue);
+	}
+}

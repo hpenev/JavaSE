@@ -1,0 +1,32 @@
+package arraysHomework;
+
+import java.util.Scanner;
+
+public class Task13 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int number = 0;
+
+		do {
+			System.out.print("Enter a number: ");
+			number = sc.nextInt();
+
+		} while (number < Integer.MAX_VALUE && number > Integer.MIN_VALUE);
+
+		sc.close();
+
+		int[] binaryNumber = new int[32];
+
+		for (int i = 0; i < 32; i++) {
+			// Here is the key for the tent
+			int bit = (number >> (binaryNumber.length - 1 - i)) & 1;
+			binaryNumber[i] = bit;
+		}
+
+		for (int i = 0; i < binaryNumber.length; i++) {
+			System.out.print(binaryNumber[i]);
+		}
+
+	}
+}

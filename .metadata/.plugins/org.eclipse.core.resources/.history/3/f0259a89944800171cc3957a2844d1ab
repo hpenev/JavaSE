@@ -1,0 +1,8 @@
+package advancedLoopsExercises;
+
+//Write a program that enters an integer n and prints the pyramid by numbers as in the examples
+public class Task13 {
+	public static void main(String[] args) {
+
+	}
+}

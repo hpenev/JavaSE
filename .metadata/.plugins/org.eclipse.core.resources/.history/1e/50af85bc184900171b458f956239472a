@@ -1,0 +1,25 @@
+package loopsExercises;
+
+import java.util.Scanner;
+
+public class Task10 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+
+		int sum = 0;
+		int max = Integer.MIN_VALUE;
+
+		for (int i = 0; i < n; i++) {
+			int currNum = sc.nextInt();
+sum +=currNum;
+			if (currNum > max) {
+				max = currNum;
+				
+			}
+
+		}
+		sc.close();
+	}
+}

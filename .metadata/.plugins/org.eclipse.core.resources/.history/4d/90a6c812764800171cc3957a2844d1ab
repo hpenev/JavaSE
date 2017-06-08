@@ -1,0 +1,6 @@
+package advancedLoopsExercises;
+//Write a program that enters an integer n and checks whether it is a simple number (whether it is divided by itself or per unit). Print "Prime" or "Not prime".
+
+public class Task10 {
+
+}

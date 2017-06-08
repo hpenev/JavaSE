@@ -1,0 +1,22 @@
+package loopsHomework;
+
+import java.util.Scanner;
+
+public class Task05 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Въведете първото число: ");
+		int a = sc.nextInt();
+		System.out.print("Въведете второто число: ");
+		int b = sc.nextInt();
+		sc.close();
+
+		int min = Math.min(a, b);
+		int max = Math.max(a, b);
+
+		for (int i = min; i <= max; i++) {
+			System.out.print(i + " ");
+		}
+	}
+}

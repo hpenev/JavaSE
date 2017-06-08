@@ -1,0 +1,7 @@
+package advancedLoopsExercises;
+
+//Write a program that enters an integer n and prints a table (matrix) of numbers as in the examples
+
+public class Task14 {
+
+}

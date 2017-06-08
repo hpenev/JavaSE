@@ -1,0 +1,23 @@
+package loopsBookChapter16;
+
+import java.util.Scanner;
+
+public class Task03 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a number [1000..99999]: ");
+		int number = sc.nextInt();
+		sc.close();
+
+		boolean isPalindrom = true;
+
+		
+		
+			int num = (number / 100000);
+			
+			System.out.print(num);
+
+	
+	}
+}

@@ -1,0 +1,23 @@
+package arraysHomework;
+
+public class Task04 {
+	public static void main(String[] args) {
+
+		int[] array = { 3, 7, 7, 3 };
+
+		int rightCell = array.length - 1;
+		boolean isMirror = true;
+
+		for (int leftCell = 0; leftCell < array.length; leftCell++) {
+			System.out.print(array[leftCell] +" "+ array[rightCell]);
+
+			if (array[leftCell] != array[rightCell]) {
+				isMirror = false;
+				break;
+			}
+		}
+
+		System.out.println(isMirror ? "Mirror" : "not mirror");
+
+	}
+}

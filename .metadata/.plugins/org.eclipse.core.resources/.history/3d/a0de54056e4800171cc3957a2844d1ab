@@ -1,0 +1,5 @@
+package advancedLoopsExercises;
+//Write a program that enters a positive integer n and prints the numbers from n to 1 in reverse order (from the largest to the smallest).
+public class Task02 {
+
+}

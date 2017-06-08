@@ -1,0 +1,22 @@
+package arraysHomework;
+
+public class Task14 {
+	public static void main(String[] args) {
+		double[] array = { 7.1, 8.5, 0.2, 3.7, 0.99, 1.4, -3.5, -110, 212, 341, 1.2 };
+		int newArrayLength = 0;
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] >= -2.99 && array[i] <= 2.99) {
+				newArrayLength++;
+			}
+		}
+
+		double[] newArray = new double[newArrayLength];
+		int newArrayIndex = 0;
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] >= -2.99 && array[i] <= 2.99) {
+				newArray[i] = array[i];
+			}
+		}
+
+	}
+}

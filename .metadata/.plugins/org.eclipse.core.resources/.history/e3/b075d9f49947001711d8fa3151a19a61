@@ -1,0 +1,26 @@
+package loopsBook;
+
+import java.util.Scanner;
+
+public class Task05 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int p = sc.nextInt();
+		int q = sc.nextInt();
+		sc.close();
+		
+		
+		if (p>0&& q>0) {
+			
+		}
+		// row
+		for (int i = 1; i <= p; i++) {
+			// column
+			for (int j = 1; j <= q; j++) {
+				System.out.printf("%d%d ", i, j);
+			}
+			System.out.println();
+		}
+	}
+}

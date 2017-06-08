@@ -1,0 +1,8 @@
+package advancedLoopsExercises;
+
+// Числата от 1 до N през 3
+public class Task01 {
+	public static void main(String[] args) {
+
+	}
+}

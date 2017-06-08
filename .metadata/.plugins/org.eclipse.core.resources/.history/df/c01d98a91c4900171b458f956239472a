@@ -1,0 +1,56 @@
+package loopsExercises;
+
+import java.util.Scanner;
+
+public class Task11 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+
+		int oddSum = 0;
+		int oddMin = Integer.MAX_VALUE;
+		int oddMax = Integer.MIN_VALUE;
+		int evenSum = 0;
+		int evenMin = Integer.MAX_VALUE;
+		int evenMax = Integer.MIN_VALUE;
+
+		for (int i = 1; i <= n; i++) {
+			int currentNumber = sc.nextInt();
+
+			if (i % 2 == 0) {
+				evenSum += currentNumber;
+
+				if (currentNumber > evenMax) {
+					evenMax = currentNumber;
+				}
+
+				if (currentNumber < evenMin) {
+					evenMin = currentNumber;
+				}
+			}
+
+			if (i % 2 != 0) {
+				oddSum += currentNumber;
+
+				if (currentNumber > oddMax) {
+					oddMax = currentNumber;
+				}
+
+				if (currentNumber < oddMin) {
+					oddMin = currentNumber;
+				}
+			}
+
+		}
+
+		System.out.printf("Oddsum = %d",oddSum);
+		System.out.printf("OddMin = %d",oddMin);
+		System.out.printf("OddMax = %d",oddMax);
+		System.out.printf("EvenSum = %d",evenSum);
+		System.out.printf("EvenMin = %d",evenMin);
+		System.out.printf("EvenMax = %d",evenMax);
+
+		sc.close();
+	}
+}

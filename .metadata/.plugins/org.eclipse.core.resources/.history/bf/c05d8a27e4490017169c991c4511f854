@@ -1,0 +1,30 @@
+package loopsBookChapter16;
+
+import java.util.Scanner;
+
+public class Task03 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a number [1000..99999]: ");
+		int number = sc.nextInt();
+		sc.close();
+
+		boolean isPalindrom = true;
+
+		if ((number / 100000) % 10 == 0) {
+			int tempNum = number;
+			int devider = 10000;
+			for (int i = 1; i < 4; i++) {
+				int firstNum = (tempNum / devider) % 10;
+				int lastNum = number % 10;
+				number /= 10;
+				devider /= 10;
+				System.out.println(firstNum);
+				// System.out.println(lastNum);
+
+			}
+		}
+
+	}
+}

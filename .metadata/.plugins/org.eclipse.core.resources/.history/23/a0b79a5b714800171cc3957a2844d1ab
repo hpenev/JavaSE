@@ -1,0 +1,16 @@
+package advancedLoopsExercises;
+
+import java.util.Scanner;
+
+//Write a program that introduces two integer positive integers a and b and calculates and prints their largest common divisor (LCD)
+//Подсказка: имплементирайте алгоритъма на Евклид
+public class Task07 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		sc.close();
+
+	}
+}

@@ -1,0 +1,91 @@
+package loopsBookChapter16;
+
+import java.util.Scanner;
+
+public class Task06_v1 {
+public static void main(String[] args) {
+	Scannerner sc = new Scanner(System.in);
+	System.out.println("Въведете ден: ");
+	int day = sc.nextInt();
+	System.out.println("Въведете месец: ");
+	int month = sc.nextInt();
+	System.out.println("Въведете година: ");
+	int year = sc.nextInt();
+	boolean leapYar = (year % 4 == 0 && (year % 400
+	== 0 || year % 100 != 0));// дали годината е високосна валидация на данните:
+	boolean correctData = true;
+	if (day < 0 || day > 31) {
+	correctData = false;
+	} else if (month < 0 || month > 12) {
+	correctData = false;
+	} else if (year < 0) {
+	correctData = false;
+	} else if (day == 29 && month == 2 && !leapYar)
+	{
+	correctData = false;
+	}
+	if (day == 28 && month == 2) {// при 28 февруари проверяваме дали годината е високосна
+	if (leapYar) {
+	day++;// при високосна година имаме	29-ти февруари
+	} else {// в противен случай - 1-ви март.
+	day = 1;
+	month++;
+	}
+	} else
+	// ако въведената дата е 29.02. и годината е високосна, правим датата на 1-ви март
+	if (day == 29 && month == 2 && leapYar) {
+		day = 1;
+		month++;
+		} else
+		// ако е въведен ден 30-ти, увеличаваме деня за		всички месеци, които са с 31 дена.
+		if (day == 30) {
+		switch (month) {
+		case 1:
+		case 2:
+		correctData = false;
+		break;// 30-ти февруари е невалидна
+		дата
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+		day++;
+		break;
+		// за всички месеци с 30 дена денят става		1ви, а месецът - следващият.
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+		day = 1;
+		month++;
+		break;
+		}
+		} else
+		// ако е въведен ден 31-ви, преминаваме на след-		ващия месец, като единствено при декември преминаваме на		следващата година.
+		if (day == 31) {
+		if (month == 2) {
+		correctData = false;// 31-ви февруари		е невалидна дата
+		}day = 1;// рестартираме деня
+		if (month == 12) {// ако месецът е декем-		ври, рестартираме месеца и вдигаме годината с 1
+		month = 1;
+		year++;
+		} else {// в противен случай вдигаме месеца		с 1
+		month++;
+		}
+		} else {// за всяка друга стойност на деня един-		ствено вдигаме деня с едно и не бутаме месеца и годината
+		day++;
+		}
+		if (correctData) {
+		System.out.println("Следващата дата е");
+		System.out.println(day + "." + month + "."
+		+ year);
+		} else {// ако в кода някъде имаме невалидни		данни за въведена дата, то тогава променливата correct-	Data е false.
+		System.out.println("Невалидна дата");
+		}
+		}
+		
+	}
+}
+}

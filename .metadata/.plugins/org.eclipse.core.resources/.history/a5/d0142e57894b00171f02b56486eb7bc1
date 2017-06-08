@@ -1,0 +1,40 @@
+package arraysHomework;
+
+import java.util.Scanner;
+
+public class Task07 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter array lenth: ");
+		int arrayLength = sc.nextInt();
+
+		int[] firstArray = new int[arrayLength];
+		for (int i = 0; i < arrayLength; i++) {
+			System.out.print("Enter a number: ");
+			firstArray[i] = sc.nextInt();
+		}
+		sc.close();
+
+		int[] secondArray = new int[firstArray.length];
+
+		secondArray[0] = firstArray[0];
+		secondArray[firstArray.length - 1] = firstArray[firstArray.length - 1];
+
+		for (int i = 1; i < firstArray.length - 1; i++) {
+			secondArray[i] = firstArray[i - 1] + firstArray[i + 1];
+		}
+		
+		
+		System.out.print("[");
+		for (int i = 0; i < array.length; i++) {
+			if (i != array.length - 1) {
+				System.out.print(array[i] + ", ");
+			} else {
+				System.out.print(array[i]);
+			}
+		}
+		System.out.println("]");
+		
+	}
+}

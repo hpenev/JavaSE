@@ -1,0 +1,9 @@
+package arraysHomework;
+
+public class Task04 {
+	public static void main(String[] args) {
+
+		int[] array = { 3, 7, 7, 3 };
+
+	}
+}

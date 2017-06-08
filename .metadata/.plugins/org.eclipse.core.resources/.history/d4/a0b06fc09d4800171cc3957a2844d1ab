@@ -1,0 +1,8 @@
+package loopsExercises;
+
+public class Task03 {
+	public static void main(String[] args) {
+for (int i = a; i <= z; i++) {
+	
+}	}
+}

@@ -1,0 +1,17 @@
+package loopsBookChapter16;
+
+import java.util.Scanner;
+
+public class Task10 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a card number:");
+		int cardNumber = sc.nextInt();
+		sc.close();
+
+		for (int card = cardNumber; card <= 52; card++) {
+
+		}
+	}
+}

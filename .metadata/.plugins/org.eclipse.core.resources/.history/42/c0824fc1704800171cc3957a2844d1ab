@@ -1,0 +1,17 @@
+package advancedLoopsExercises;
+
+import java.util.Scanner;
+
+// Write a program that introduces a positive integer n in the range [1 ... 100]. When entering a number outside the specified range, an error message is printed and the user is prompted to enter a new number.
+
+public class Task06 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		do {
+			System.out.print("Ånter a number in the range [1...100]: ");
+
+		} while (condition);
+		sc.close();
+	}
+}
