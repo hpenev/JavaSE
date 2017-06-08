@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Task08 {
 	public static void main(String[] args) {
+
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter array length: ");
 		int arrayLength = sc.nextInt();

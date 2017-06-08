@@ -3,11 +3,7 @@ package arraysHomework;
 public class Task05 {
 	public static void main(String[] args) {
 
-		// if simultaneously should declare and initialize array
-		// int[] array = new int[] { 0, 3, 6, 9, 12, 15, 18, 21, 24, 27 };
-
-		// if simultaneously should declare and initialize array with default
-		// values
+		// declare array and initialize with default values
 		int[] array = new int[10];
 
 		// Assign new values to array

@@ -1,9 +1,23 @@
 package arraysHomework;
 
+import java.util.Scanner;
+
 public class Task04 {
 	public static void main(String[] args) {
 
-		int[] array = { 6, 27, -1, 5, 7, 7, 5, -1, 27, 6 };
+		// int[] array = { 6, 27, -1, 5, 7, 7, 5, -1, 27, 6 };
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter array length: ");
+		int arrayLength = sc.nextInt();
+
+		int[] array = new int[arrayLength];
+		for (int i = 0; i < array.length; i++) {
+			System.out.print("Enter a number: ");
+			array[i] = sc.nextInt();
+		}
+		sc.close();
+
 		int rightCell = array.length - 1;
 		boolean isMirror = true;
 

@@ -5,32 +5,35 @@ import java.util.Scanner;
 public class Task07 {
 	public static void main(String[] args) {
 
+		// read array from console
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter array length: ");
-		int arrayLength = sc.nextInt();
+		int array1Length = sc.nextInt();
 
-		int[] arr1 = new int[arrayLength];
-		for (int i = 0; i < arrayLength; i++) {
+		int[] array1 = new int[array1Length];
+		for (int i = 0; i < array1.length; i++) {
 			System.out.print("Enter a number: ");
-			arr1[i] = sc.nextInt();
+			array1[i] = sc.nextInt();
 		}
 		sc.close();
 
-		int[] arr2 = new int[arr1.length];
+		// create new array
+		int[] array2 = new int[array1.length];
 
-		arr2[0] = arr1[0];
-		arr2[arr1.length - 1] = arr1[arr1.length - 1];
+		array2[0] = array1[0];
+		array2[array1.length - 1] = array1[array1.length - 1];
 
-		for (int i = 1; i < arr1.length - 1; i++) {
-			arr2[i] = arr1[i - 1] + arr1[i + 1];
+		for (int i = 1; i < array1.length - 1; i++) {
+			array2[i] = array1[i - 1] + array1[i + 1];
 		}
 
+		// print array
 		System.out.print("[");
-		for (int i = 0; i < arr2.length; i++) {
-			if (i != arr2.length - 1) {
-				System.out.print(arr2[i] + ", ");
+		for (int i = 0; i < array2.length; i++) {
+			if (i != array2.length - 1) {
+				System.out.print(array2[i] + ", ");
 			} else {
-				System.out.print(arr2[i]);
+				System.out.print(array2[i]);
 			}
 		}
 		System.out.println("]");
