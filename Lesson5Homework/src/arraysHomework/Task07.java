@@ -10,6 +10,11 @@ public class Task07 {
 		System.out.print("Enter array length: ");
 		int array1Length = sc.nextInt();
 
+		while (array1Length <= 0) {
+			System.out.print("Enter array length: ");
+			array1Length = sc.nextInt();
+		}
+
 		int[] array1 = new int[array1Length];
 		for (int i = 0; i < array1.length; i++) {
 			System.out.print("Enter a number: ");

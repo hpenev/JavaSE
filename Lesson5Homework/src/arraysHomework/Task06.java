@@ -11,6 +11,11 @@ public class Task06 {
 		System.out.print("Enter array1 length: ");
 		int array1Length = sc.nextInt();
 
+		while (array1Length <= 0) {
+			System.out.print("Enter array1 length: ");
+			array1Length = sc.nextInt();
+		}
+
 		int[] array1 = new int[array1Length];
 		for (int i = 0; i < array1.length; i++) {
 			System.out.print("Enter a number: ");
@@ -19,6 +24,11 @@ public class Task06 {
 
 		System.out.print("Enter array2 length: ");
 		int array2Length = sc.nextInt();
+
+		while (array2Length <= 0) {
+			System.out.print("Enter array2 length: ");
+			array2Length = sc.nextInt();
+		}
 
 		int[] array2 = new int[array2Length];
 		for (int i = 0; i < array2.length; i++) {
