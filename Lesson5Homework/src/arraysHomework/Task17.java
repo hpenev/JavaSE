@@ -7,13 +7,11 @@ public class Task17 {
 
 		// int[] array = { 1, 3, 2, 4, 3, 7 };
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter array length: ");
-		int arrayLength = sc.nextInt();
-
-		while (arrayLength <= 0) {
+		int arrayLength = 0;
+		do {
 			System.out.print("Enter array length: ");
 			arrayLength = sc.nextInt();
-		}
+		} while (arrayLength <= 0);
 
 		int[] array = new int[arrayLength];
 		for (int i = 0; i < array.length; i++) {

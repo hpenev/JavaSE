@@ -6,14 +6,13 @@ public class Task07 {
 	public static void main(String[] args) {
 
 		// read array from console
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter array length: ");
-		int array1Length = sc.nextInt();
 
-		while (array1Length <= 0) {
+		Scanner sc = new Scanner(System.in);
+		int array1Length = 0;
+		do {
 			System.out.print("Enter array length: ");
 			array1Length = sc.nextInt();
-		}
+		} while (array1Length <= 0);
 
 		int[] array1 = new int[array1Length];
 		for (int i = 0; i < array1.length; i++) {

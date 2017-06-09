@@ -8,13 +8,12 @@ public class Task04 {
 		// int[] array = { 6, 27, -1, 5, 7, 7, 5, -1, 27, 6 };
 
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter array length: ");
-		int arrayLength = sc.nextInt();
+		int arrayLength = 0;
 
-		while (arrayLength <= 0) {
+		do {
 			System.out.print("Enter array length: ");
 			arrayLength = sc.nextInt();
-		}
+		} while (arrayLength <= 0);
 
 		int[] array = new int[arrayLength];
 		for (int i = 0; i < array.length; i++) {
