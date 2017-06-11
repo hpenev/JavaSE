@@ -1,7 +1,0 @@
-package advancedLoopsExercises;
-//Write a program that reads from the console an integer n and prints the numbers from 1 to 2n
-public class Task03 {
-	public static void main(String[] args) {
-
-	}
-}

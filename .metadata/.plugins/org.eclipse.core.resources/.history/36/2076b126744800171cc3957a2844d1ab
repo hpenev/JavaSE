@@ -1,8 +1,0 @@
-package advancedLoopsExercises;
-
-//Write a program that enters an integer num and prints the sum of its numbers.
-public class Task09 {
-public static void main(String[] args) {
-	
-}
-}

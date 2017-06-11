@@ -1,5 +1,0 @@
-package advancedLoopsExercises;
-//Write a program that introduces two integer positive integers a and b and calculates and prints their largest common divisor (LCD)
-public class Task07 {
-
-}
