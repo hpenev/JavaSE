@@ -23,8 +23,8 @@ public class Task05 {
 	// System.out.println(Arrays.toString(sumCols));
 	// System.out.println(Arrays.toString(sumRows));
 
-	int maxSumRows = -2147483648;
-	int maxSumCols = -2147483648;
+	int maxSumRows = matrix[0][0];
+	int maxSumCols = matrix[0][0];
 
 	for (int i = 0; i < sumRows.length; i++) {
 	    if (sumRows[i] > maxSumRows) {

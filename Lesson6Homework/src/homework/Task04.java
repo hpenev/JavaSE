@@ -9,11 +9,12 @@ public class Task04 {
 		{ 13, 14, 15, 16 }
 	};
 	
-	for (int j = 0; j < matrix.length; j++) {
-	    for (int i = matrix[j].length - 1; i >= 0; i--) {
-		System.out.print(matrix[i][j] + " ");
+	for (int i = 0; i < matrix.length; i++) {
+	    for (int j = matrix[i].length - 1; j >= 0; j--) {
+		System.out.print(matrix[j][i] + " ");
 	    }
 	    System.out.println();
 	}
+
     }
 }
