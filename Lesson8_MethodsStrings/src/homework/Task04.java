@@ -1,5 +1,14 @@
 package homework;
 
+/*
+Задача 4:
+Да се състави програма, чрез която по въведени трите имена на двама
+човека разделени със запетая, се извежда чие име има по-голям сбор
+от ASCII кодовете на съставящите името букви.
+Пример: Anna Dosewa Asenowa, Iwo Peew Peew
+Изход: Anna Dosewa Asenowa
+*/
+
 import java.util.Scanner;
 
 public class Task04 {

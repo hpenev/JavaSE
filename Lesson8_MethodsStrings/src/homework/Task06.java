@@ -1,5 +1,15 @@
 package homework;
 
+/*
+Задача 6:
+Да се състави програма, чрез която се въвежда изречение с отделни
+думи.
+Като резултат на екрана да се извежда същия текст, но всяка отделна
+дума да започва с главна буква, а следващите я букви да са малки.
+Пример: супер яката задача
+Изход: Супер Яката Задача
+
+*/
 import java.util.Scanner;
 
 public class Task06 {
@@ -22,6 +32,11 @@ public class Task06 {
     }
 
     static String CapitalizeWord(String word) {
-	return Character.toUpperCase(word.charAt(0)) + word.substring(1).toLowerCase();
+	StringBuilder sb = new StringBuilder();
+
+	sb.append(word.substring(0, 1).toUpperCase());
+	sb.append(word.substring(1));
+
+	return sb.toString();
     }
 }
