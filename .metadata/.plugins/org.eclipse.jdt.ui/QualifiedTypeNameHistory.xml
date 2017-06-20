@@ -37,10 +37,12 @@
 <fullyQualifiedTypeName name="javax.naming.PartialResultException"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="javax.management.relation.RelationServiceNotRegisteredException"/>
-<fullyQualifiedTypeName name="java.awt.image.PixelInterleavedSampleModel"/>
 <fullyQualifiedTypeName name="org.omg.CosNaming.NamingContextExtPackage.StringNameHelper"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="org.omg.PortableServer.ServantActivator"/>
+<fullyQualifiedTypeName name="java.util.IllegalFormatCodePointException"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.awt.image.PixelInterleavedSampleModel"/>
 </qualifiedTypeNameHistroy>

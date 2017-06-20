@@ -2,7 +2,7 @@ package bookChapter8;
 
 import java.util.Scanner;
 
-public class Recursion {
+public class Factorial_Recursion {
     public static void main(String[] args) {
 
 	Scanner sc = new Scanner(System.in);
