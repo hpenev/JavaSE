@@ -19,12 +19,38 @@ public class Task11 {
 	int col = sc.nextInt();
 	sc.close();
 	if (col > 0) {
-	    iteration(col);
-
+	    // iteration(col);
+	    recursion(1, col);
 	} else {
 	    System.out.println("Wrong input");
-
 	}
+
+    }
+
+    static void recursion(int row, int col) {
+	if (row == col + 1) {
+	    return;
+	}
+	spacesBeforeTriangle(col - row);
+	triangle(1, row);
+	System.out.println("*");
+	recursion(row + 1, col);
+    }
+
+    static void triangle(int i, int row) {
+	if (i == 2 * row - 1) {
+	    return;
+	}
+	System.out.print("*");
+	triangle(i + 1, row);
+    }
+
+    static void spacesBeforeTriangle(int i) {
+	if (i == 0) {
+	    return;
+	}
+	System.out.print(" ");
+	spacesBeforeTriangle(i - 1);
 
     }
 

@@ -22,7 +22,6 @@
 <fullyQualifiedTypeName name="javax.jws.Oneway"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.util.function.IntConsumer"/>
-<fullyQualifiedTypeName name="java.lang.InstantiationError"/>
 <fullyQualifiedTypeName name="javax.swing.RowFilter"/>
 <fullyQualifiedTypeName name="java.lang.Package"/>
 <fullyQualifiedTypeName name="javax.lang.model.element.PackageElement"/>
@@ -42,10 +41,12 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.IllegalFormatCodePointException"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.awt.image.PixelInterleavedSampleModel"/>
 <fullyQualifiedTypeName name="org.omg.PortableInterceptor.INACTIVE"/>
 <fullyQualifiedTypeName name="java.util.Base64"/>
 <fullyQualifiedTypeName name="java.time.chrono.MinguoChronology"/>
 <fullyQualifiedTypeName name="org.omg.PortableServer.ServantActivator"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.InstantiationError"/>
+<fullyQualifiedTypeName name="loopsHomeworkWithRecursion.Task18"/>
 </qualifiedTypeNameHistroy>
