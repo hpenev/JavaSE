@@ -41,8 +41,11 @@
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="org.omg.PortableServer.ServantActivator"/>
 <fullyQualifiedTypeName name="java.util.IllegalFormatCodePointException"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.awt.image.PixelInterleavedSampleModel"/>
+<fullyQualifiedTypeName name="org.omg.PortableInterceptor.INACTIVE"/>
+<fullyQualifiedTypeName name="java.util.Base64"/>
+<fullyQualifiedTypeName name="java.time.chrono.MinguoChronology"/>
+<fullyQualifiedTypeName name="org.omg.PortableServer.ServantActivator"/>
 </qualifiedTypeNameHistroy>
