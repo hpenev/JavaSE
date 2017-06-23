@@ -52,7 +52,9 @@
 <fullyQualifiedTypeName name="bookChapter16_Recursion.Task07"/>
 <fullyQualifiedTypeName name="java.util.PrimitiveIterator.OfDouble"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.InstantiationError"/>
 <fullyQualifiedTypeName name="javax.swing.undo.UndoableEditSupport"/>
+<fullyQualifiedTypeName name="javax.print.PrintServiceLookup"/>
+<fullyQualifiedTypeName name="java.rmi.activation.UnknownGroupException"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
