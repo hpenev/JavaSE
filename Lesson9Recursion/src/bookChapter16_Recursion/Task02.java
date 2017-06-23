@@ -1,5 +1,10 @@
 package bookChapter16_Recursion;
 
+/*
+2. Да се състави програма, която по въведен масив с естествени числа извежда
+минималния елемент от масива. Използвайте рекурсия.
+*/
+
 public class Task02 {
     public static void main(String[] args) {
 	int[] arr = { 1, 2, 3, -4, 5, 6 };

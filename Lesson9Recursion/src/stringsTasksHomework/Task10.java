@@ -23,12 +23,7 @@ public class Task10 {
 	System.out.print("Enter non negative number <= previous: ");
 	int m = sc.nextInt();
 
-	for (int i = 0; i < sb.length(); i++) {
-	    if (condition) {
+	System.out.println(sb.indexOf(String.valueOf(m)));
 
-	    }
-	    System.out.println(i);
-
-	}
     }
 }

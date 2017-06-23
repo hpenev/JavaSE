@@ -1,4 +1,4 @@
-package homework;
+package homeworkRecursiveTasks;
 /*
 Задача 3:
 Да се състави програма, която проверява дали въведено естествено

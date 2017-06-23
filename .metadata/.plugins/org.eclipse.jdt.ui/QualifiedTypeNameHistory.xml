@@ -20,7 +20,6 @@
 <fullyQualifiedTypeName name="javax.jws.Oneway"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.util.function.IntConsumer"/>
-<fullyQualifiedTypeName name="javax.swing.RowFilter"/>
 <fullyQualifiedTypeName name="java.lang.Package"/>
 <fullyQualifiedTypeName name="javax.lang.model.element.PackageElement"/>
 <fullyQualifiedTypeName name="java.util.PrimitiveIterator.OfDouble"/>
@@ -29,7 +28,6 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="inClass.StringBuilder"/>
 <fullyQualifiedTypeName name="javax.swing.text.AbstractDocument.BranchElement"/>
-<fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="javax.management.relation.RelationServiceNotRegisteredException"/>
 <fullyQualifiedTypeName name="org.omg.CosNaming.NamingContextExtPackage.StringNameHelper"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
@@ -38,7 +36,6 @@
 <fullyQualifiedTypeName name="org.omg.PortableInterceptor.INACTIVE"/>
 <fullyQualifiedTypeName name="java.util.Base64"/>
 <fullyQualifiedTypeName name="java.time.chrono.MinguoChronology"/>
-<fullyQualifiedTypeName name="org.omg.PortableServer.ServantActivator"/>
 <fullyQualifiedTypeName name="java.lang.InstantiationError"/>
 <fullyQualifiedTypeName name="loopsHomeworkWithRecursion.Task18"/>
 <fullyQualifiedTypeName name="inClass.sumN_recursion"/>
@@ -47,9 +44,14 @@
 <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="javax.naming.PartialResultException"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.lang.Number"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.nio.charset.spi.CharsetProvider"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="org.omg.PortableServer.ServantActivator"/>
+<fullyQualifiedTypeName name="javax.swing.RowFilter"/>
+<fullyQualifiedTypeName name="bookChapter16_Recursion.Task07"/>
 </qualifiedTypeNameHistroy>

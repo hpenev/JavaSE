@@ -1,4 +1,4 @@
-package homework;
+package homeworkRecursiveTasks;
 
 import java.util.Scanner;
 
