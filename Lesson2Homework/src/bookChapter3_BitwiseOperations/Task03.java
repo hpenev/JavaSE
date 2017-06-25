@@ -1,4 +1,4 @@
-package bookBitwiseOperations;
+package bookChapter3_BitwiseOperations;
 
 import java.util.Scanner;
 
