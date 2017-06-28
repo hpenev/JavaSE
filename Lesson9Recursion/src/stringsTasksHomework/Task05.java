@@ -9,8 +9,8 @@ package stringsTasksHomework;
 
 public class Task05 {
     public static void main(String[] args) {
-	String fistWord = "team";
-	String secondWord = "meat";
+	String fistWord = "mmmaa";
+	String secondWord = "mama";
 
 	boolean isAnagram = true;
 
