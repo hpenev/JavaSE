@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.text.DecimalFormatSymbols"/>
-<fullyQualifiedTypeName name="java.text.DecimalFormat"/>
 <fullyQualifiedTypeName name="java.nio.charset.MalformedInputException"/>
 <fullyQualifiedTypeName name="javax.sql.rowset.spi.SyncFactory"/>
 <fullyQualifiedTypeName name="java.io.FilterInputStream"/>
@@ -33,7 +31,6 @@
 <fullyQualifiedTypeName name="java.awt.image.PixelInterleavedSampleModel"/>
 <fullyQualifiedTypeName name="org.omg.PortableInterceptor.INACTIVE"/>
 <fullyQualifiedTypeName name="java.util.Base64"/>
-<fullyQualifiedTypeName name="java.time.chrono.MinguoChronology"/>
 <fullyQualifiedTypeName name="loopsHomeworkWithRecursion.Task18"/>
 <fullyQualifiedTypeName name="inClass.sumN_recursion"/>
 <fullyQualifiedTypeName name="javax.print.DocFlavor.INPUT_STREAM"/>
@@ -43,7 +40,6 @@
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="java.nio.charset.spi.CharsetProvider"/>
-<fullyQualifiedTypeName name="org.omg.PortableServer.ServantActivator"/>
 <fullyQualifiedTypeName name="javax.swing.RowFilter"/>
 <fullyQualifiedTypeName name="bookChapter16_Recursion.Task07"/>
 <fullyQualifiedTypeName name="java.util.PrimitiveIterator.OfDouble"/>
@@ -58,5 +54,10 @@
 <fullyQualifiedTypeName name="javax.management.BadBinaryOpValueExpException"/>
 <fullyQualifiedTypeName name="javax.naming.PartialResultException"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="org.omg.PortableServer.ServantActivator"/>
+<fullyQualifiedTypeName name="java.awt.RenderingHints"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="quickSort"/>
+<fullyQualifiedTypeName name="javax.naming.ldap.ExtendedRequest"/>
+<fullyQualifiedTypeName name="java.time.chrono.MinguoChronology"/>
 </qualifiedTypeNameHistroy>
