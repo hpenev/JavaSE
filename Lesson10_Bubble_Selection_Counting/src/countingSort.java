@@ -20,7 +20,7 @@ public class countingSort {
 		max = arr[i];
 	    }
 	}
-	// 2. create helper with mmax - min + 1 elements
+	// 2. create helper with max - min + 1 elements
 	int[] helper = new int[max - min + 1];
 	// 3. increment counters in helper
 	for (int i = 0; i < arr.length; i++) {
@@ -28,7 +28,7 @@ public class countingSort {
 	    helper[number - min]++;
 	}
 	// 4. travers counter in helpers and replace each cell with new value
-	// depanding on the counte
+	// depanding on the counter
 	int orignalIndex = 0;
 	for (int i = 0; i < helper.length; i++) {
 	    while (helper[i] > 0) {

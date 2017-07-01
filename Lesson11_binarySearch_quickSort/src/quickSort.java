@@ -22,21 +22,18 @@ public class quickSort {
 	// choose pivot
 	int pivot = arr[right]; // here we can do some opitimization
 	// traverse all elements except pivot
-	int idx = left;
+	int index = left;
 	for (int i = left; i < right; i++) {
 	    // compare all with pivot
 	    // if lesser move to begining
 	    if (arr[i] < pivot) {
-		swap(arr, i, idx++);
+		swap(arr, i, index++);
 	    }
 	}
 	// last - slap pitot with element nex to the last lesser one
-	swap(arr, right, idx);
+	swap(arr, right, index);
 
-	// partition(arr, left, idx + 1);
-	// partition(arr, idx - 1, right);
-
-	return idx;
+	return index;
     }
 
     static void swap(int[] arr, int i1, int i2) {

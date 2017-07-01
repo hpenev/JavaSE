@@ -11,31 +11,22 @@ public class selectionSort {
     }
 
     private static void selectionSortOptimized(int[] array) {
-	int counter = 0;
-	// tysim do polovinata masiv
 	for (int i = 0; i < array.length / 2; i++) {
 
-	    int max = array[i];
 	    int maxIndex = i;
-	    int min = array[i];
 	    int minIndex = i;
 
-	    // tyrsim do kraq minus i
 	    for (int j = i; j < array.length - i; j++) {
-
-		counter++;
-		if (array[j] < min) {
-		    min = array[j];
+		if (array[j] < array[i]) {
+		    array[i] = array[j];
 		    minIndex = j;
 		}
-		if (array[j] > max) {
-		    max = array[j];
+		if (array[j] > array[i]) {
+		    array[i] = array[j];
 		    maxIndex = j;
 		}
 	    }
-	    // ako maximalnata stoinost e na pyrvo mqsto, zapazvame stoinostta i
-	    // sled premestvaneto na minimalniq element. t.e. zapazva pyrvata
-	    // poziciq na minElement
+
 	    if (maxIndex == i) {
 		maxIndex = minIndex;
 	    }
@@ -48,7 +39,6 @@ public class selectionSort {
 	    array[array.length - 1 - i] = array[maxIndex];
 	    array[maxIndex] = tempMax;
 	}
-	System.out.println("Operations:" + counter);
     }
 
     private static void selectionSort(int[] array) {

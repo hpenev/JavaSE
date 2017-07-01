@@ -8,7 +8,7 @@ package bookChapter16_Recursion;
 
 public class Task04 {
     public static void main(String[] args) {
-	int[] array = { 1, 0, 2, 3, 4, 5 };
+	int[] array = { 1, 0, 2, 3, 4, 1 };
 	System.out.println(equalCells(array));
     }
 

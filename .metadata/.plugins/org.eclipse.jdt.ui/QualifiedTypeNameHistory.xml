@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.nio.charset.MalformedInputException"/>
-<fullyQualifiedTypeName name="javax.sql.rowset.spi.SyncFactory"/>
-<fullyQualifiedTypeName name="java.io.FilterInputStream"/>
-<fullyQualifiedTypeName name="java.lang.InheritableThreadLocal"/>
 <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicComboPopup.InvocationKeyHandler"/>
 <fullyQualifiedTypeName name="org.xml.sax.helpers.ParserFactory"/>
 <fullyQualifiedTypeName name="org.w3c.dom.css.Counter"/>
@@ -36,28 +32,32 @@
 <fullyQualifiedTypeName name="javax.print.DocFlavor.INPUT_STREAM"/>
 <fullyQualifiedTypeName name="javax.management.ImmutableDescriptor"/>
 <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
-<fullyQualifiedTypeName name="java.lang.Number"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="java.nio.charset.spi.CharsetProvider"/>
 <fullyQualifiedTypeName name="javax.swing.RowFilter"/>
 <fullyQualifiedTypeName name="bookChapter16_Recursion.Task07"/>
 <fullyQualifiedTypeName name="java.util.PrimitiveIterator.OfDouble"/>
-<fullyQualifiedTypeName name="java.lang.InstantiationError"/>
 <fullyQualifiedTypeName name="javax.swing.undo.UndoableEditSupport"/>
 <fullyQualifiedTypeName name="javax.print.PrintServiceLookup"/>
 <fullyQualifiedTypeName name="java.rmi.activation.UnknownGroupException"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.BootstrapMethodError"/>
 <fullyQualifiedTypeName name="java.lang.Iterable"/>
 <fullyQualifiedTypeName name="javax.management.BadBinaryOpValueExpException"/>
 <fullyQualifiedTypeName name="javax.naming.PartialResultException"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="org.omg.PortableServer.ServantActivator"/>
 <fullyQualifiedTypeName name="java.awt.RenderingHints"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="quickSort"/>
 <fullyQualifiedTypeName name="javax.naming.ldap.ExtendedRequest"/>
 <fullyQualifiedTypeName name="java.time.chrono.MinguoChronology"/>
+<fullyQualifiedTypeName name="bookChapter8.Factorial_Recursion"/>
+<fullyQualifiedTypeName name="org.omg.PortableServer.ID_ASSIGNMENT_POLICY_ID"/>
+<fullyQualifiedTypeName name="javax.sound.midi.Receiver"/>
+<fullyQualifiedTypeName name="java.lang.InstantiationError"/>
+<fullyQualifiedTypeName name="java.lang.Number"/>
+<fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
+<fullyQualifiedTypeName name="org.omg.PortableServer.ServantActivator"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
