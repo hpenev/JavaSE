@@ -18,11 +18,11 @@ public class binarySearch_BookExample {
 	System.out.println(index);
     }
 
-    public static int binarySearch(int[] arr, int x, int start, int end) {
+    public static int binarySearch(int[] arr, int x, int left, int right) {
 	// нашето предположение е mid елемента
-	int mid = (end + start) / 2;
+	int mid = (right + left) / 2;
 	// ако не съществува елемент вмасива със стойност х
-	if (start > end) {
+	if (left > right) {
 	    return -1;
 	}
 	// ако сме познали числото
@@ -32,12 +32,12 @@ public class binarySearch_BookExample {
 	// ако числото е по-малко от елемента в средата,
 	// съкращаваме диапазона до лявата половина
 	if (x < arr[mid]) {
-	    return binarySearch(arr, x, start, mid - 1);
+	    return binarySearch(arr, x, left, mid - 1);
 	}
 	// ако числото е по-голямо от елемента в средата,
 	// съкращаваме диапазона до дясната половина
 	if (x > arr[mid]) {
-	    return binarySearch(arr, x, mid + 1, end);
+	    return binarySearch(arr, x, mid + 1, right);
 	}
 	return -1;
     }

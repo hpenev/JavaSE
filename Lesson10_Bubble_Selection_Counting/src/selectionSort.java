@@ -17,12 +17,10 @@ public class selectionSort {
 	    int minIndex = i;
 
 	    for (int j = i; j < array.length - i; j++) {
-		if (array[j] < array[i]) {
-		    array[i] = array[j];
+		if (array[j] < array[minIndex]) {
 		    minIndex = j;
 		}
-		if (array[j] > array[i]) {
-		    array[i] = array[j];
+		if (array[j] > array[maxIndex]) {
 		    maxIndex = j;
 		}
 	    }

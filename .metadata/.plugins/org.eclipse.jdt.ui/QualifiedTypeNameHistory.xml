@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicComboPopup.InvocationKeyHandler"/>
-<fullyQualifiedTypeName name="org.xml.sax.helpers.ParserFactory"/>
-<fullyQualifiedTypeName name="org.w3c.dom.css.Counter"/>
-<fullyQualifiedTypeName name="java.beans.ExceptionListener"/>
 <fullyQualifiedTypeName name="java.security.Principal"/>
 <fullyQualifiedTypeName name="java.util.concurrent.ConcurrentHashMap"/>
 <fullyQualifiedTypeName name="javax.print.attribute.standard.NumberUp"/>
@@ -23,7 +19,6 @@
 <fullyQualifiedTypeName name="javax.management.relation.RelationServiceNotRegisteredException"/>
 <fullyQualifiedTypeName name="org.omg.CosNaming.NamingContextExtPackage.StringNameHelper"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="java.util.IllegalFormatCodePointException"/>
 <fullyQualifiedTypeName name="java.awt.image.PixelInterleavedSampleModel"/>
 <fullyQualifiedTypeName name="org.omg.PortableInterceptor.INACTIVE"/>
 <fullyQualifiedTypeName name="java.util.Base64"/>
@@ -32,7 +27,6 @@
 <fullyQualifiedTypeName name="javax.print.DocFlavor.INPUT_STREAM"/>
 <fullyQualifiedTypeName name="javax.management.ImmutableDescriptor"/>
 <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
-<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="java.nio.charset.spi.CharsetProvider"/>
 <fullyQualifiedTypeName name="javax.swing.RowFilter"/>
@@ -48,16 +42,22 @@
 <fullyQualifiedTypeName name="javax.naming.PartialResultException"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.awt.RenderingHints"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="quickSort"/>
 <fullyQualifiedTypeName name="javax.naming.ldap.ExtendedRequest"/>
 <fullyQualifiedTypeName name="java.time.chrono.MinguoChronology"/>
 <fullyQualifiedTypeName name="bookChapter8.Factorial_Recursion"/>
 <fullyQualifiedTypeName name="org.omg.PortableServer.ID_ASSIGNMENT_POLICY_ID"/>
 <fullyQualifiedTypeName name="javax.sound.midi.Receiver"/>
-<fullyQualifiedTypeName name="java.lang.InstantiationError"/>
 <fullyQualifiedTypeName name="java.lang.Number"/>
 <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="org.omg.PortableServer.ServantActivator"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.IconifyAction"/>
+<fullyQualifiedTypeName name="chess_v2"/>
+<fullyQualifiedTypeName name="java.lang.InstantiationError"/>
+<fullyQualifiedTypeName name="java.awt.font.TextHitInfo"/>
+<fullyQualifiedTypeName name="java.util.IllegalFormatCodePointException"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="javax.security.auth.Subject"/>
 </qualifiedTypeNameHistroy>

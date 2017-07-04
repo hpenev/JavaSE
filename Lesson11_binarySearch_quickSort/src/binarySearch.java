@@ -16,7 +16,7 @@ public class binarySearch {
 	// compare with x
 	// if equal return mid index
 	// if greater serch between left and mid
-	// if lesseer search between mid and right
+	// if lesser search between mid and right
 
 	if (left > right) {
 	    return -1;
