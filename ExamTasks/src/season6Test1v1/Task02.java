@@ -2,8 +2,34 @@ package season6Test1v1;
 
 public class Task02 {
     public static void main(String[] args) {
-	String text = "Today is a good day for test. Sun is shining. The students are happy. The birds are blue.";
-	longestSentence2(text);
+	String text = "Sun is shining. The students are happy. The birds are blue. Today is a good day for test.";
+	longestSentence3(text);
+    }
+
+    static void longestSentence3(String text) {
+	String senence = "";
+	int start = 0;
+	int capitalLetters = 0;
+
+	for (int i = 0; i < text.length(); i++) {
+	    if (text.charAt(i) >= 'A' && text.charAt(i) <= 'Z') {
+		capitalLetters++;
+		if (i - start > senence.length()) {
+		    senence = text.substring(start, i);
+		}
+		start = i;
+	    }
+
+	    if (i == text.length() - 1) {
+		if (i - start > senence.length()) {
+		    senence = text.substring(start, i + 1);
+		}
+	    }
+	}
+
+	System.out.println(senence);
+	System.out.println(capitalLetters + " sentences in the text.");
+
     }
 
     static void longestSentence2(String text) {
