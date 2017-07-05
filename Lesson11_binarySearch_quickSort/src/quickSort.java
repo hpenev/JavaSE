@@ -27,7 +27,7 @@ public class quickSort {
 	    // compare all with pivot
 	    // if lesser move to begining
 	    if (arr[i] < pivot) {
-		swap(arr, i, index++);
+			swap(arr, i, index++);
 	    }
 	}
 	// last - slap pitot with element nex to the last lesser one
@@ -37,8 +37,8 @@ public class quickSort {
     }
 
     static void swap(int[] arr, int i1, int i2) {
-	int temp = arr[i1];
-	arr[i1] = arr[i2];
-	arr[i2] = temp;
+		int temp = arr[i1];
+		arr[i1] = arr[i2];
+		arr[i2] = temp;
     }
 }

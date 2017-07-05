@@ -26,10 +26,8 @@ public class Task02 {
 		}
 	    }
 	}
-
 	System.out.println(senence);
 	System.out.println(capitalLetters + " sentences in the text.");
-
     }
 
     static void longestSentence2(String text) {
