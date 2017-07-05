@@ -35,7 +35,8 @@ public class Task01 {
 
 		    if (c1 + 1 == c2 && c2 + 1 == c3) {
 			if (arr[i].charAt(1) == arr[j].charAt(1) && arr[i].charAt(1) == arr[k].charAt(1)) {
-			    System.out.println("Tertza: " + c1 + " " + c2 + " " + c3 + " " + arr[i].charAt(1));
+			    System.out.println("Tertza: " + arr[i].charAt(0) + " " + arr[j].charAt(0) + " "
+				    + arr[k].charAt(0) + " " + arr[i].charAt(1));
 			    return true;
 			}
 		    }
