@@ -1169,6 +1169,7 @@ IEclipsePreferences#org-eclipse-tm-terminal-control {
 IEclipsePreferences#org-eclipse-ui-editors {
 	preferences:
 		'AbstractTextEditor.Color.Background.SystemDefault=false'
+		'org.eclipse.cdt.ui.writeOccurrenceIndicationColor=27,98,145'
 		'lineNumberColor=101,123,131'
 		'searchResultIndication=true'
 		'hyperlinkColor.SystemDefault=false'
