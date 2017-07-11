@@ -2,32 +2,32 @@ package mortalKombat;
 
 import java.util.Random;
 
-public class Fighter {
+public class Player {
     String name;
-    int health = 100;
-    int damage = 10;
-    Fighter opponent;
+    int health = 50;
+    int damage = 11;
+    Player opponent;
 
     void hit() {
-	System.out.println(name + " (" + health + ") - " + opponent.name + " (" + opponent.health + ")");
-	if (chance() < 15.0) {
+	System.out.println("Start:\t" + name + " (" + health + ") - " + opponent.name + " (" + opponent.health + ")");
+	if (chance() <= 15.0) {
 	    avoidHit();
 	} else {
-	    if (chance() < 5.0) {
+	    if (chance() <= 5.0) {
 		criticalHit();
 	    } else {
 		regularHit();
 	    }
 	}
 
-	System.out.println(name + " (" + health + ") - " + opponent.name + " (" + opponent.health + ")");
+	System.out.println("End:\t" + name + " (" + health + ") - " + opponent.name + " (" + opponent.health + ")");
     }
 
     void regularHit() {
-	if (chance() < 30.0) {
+	if (chance() <= 30.0) {
 	    blockHit();
 	} else {
-	    System.out.println(name + " Regular hit (" + damage + ") " + opponent.name);
+	    System.out.println("\t" + name + " hit regular (" + damage + ") " + opponent.name);
 	    if (opponent.health < damage) {
 		opponent.health = 0;
 	    } else {
@@ -43,7 +43,7 @@ public class Fighter {
 	} else {
 	    opponent.health -= criticalDamage;
 	}
-	System.out.println(name + " Critical hit (" + criticalDamage + ") " + opponent.name);
+	System.out.println("\t" + name + " hit critical (" + criticalDamage + ") " + opponent.name);
 
     }
 
@@ -54,11 +54,11 @@ public class Fighter {
 	} else {
 	    opponent.health -= blockedDamage;
 	}
-	System.out.println(name + " blocked hit (" + blockedDamage + ") " + opponent.name);
+	System.out.println("\t" + name + " hit, but blocked (" + blockedDamage + ") by " + opponent.name);
     }
 
     void avoidHit() {
-	System.out.println("Hit avoided!");
+	System.out.println("\t" + "Hit avoided!");
     }
 
     double chance() {
