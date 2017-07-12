@@ -11,4 +11,17 @@ public class Call {
 	this.receiver = receiver;
 	this.duration = duration;
     }
+
+    String getCaller() {
+	return caller.getModel();
+    }
+
+    String getReceiver() {
+	return receiver.getModel();
+    }
+
+    double getDuration() {
+	return duration;
+    }
+
 }
