@@ -14,6 +14,7 @@ public class test {
 	// test without sim
 	samsung.call(apple, 5.2);
 
+	// insert Sim Card
 	samsung.insertSimCard(mtelSim);
 	apple.insertSimCard(vivacomSim);
 
@@ -26,8 +27,8 @@ public class test {
 
 	// test without sim
 	apple.removeSimCard();
-	samsung.removeSimCard();
 	samsung.call(apple, 1.2);
+	samsung.removeSimCard();
 	apple.call(samsung, 4.6);
 
 	System.out.println();
@@ -35,19 +36,20 @@ public class test {
 	System.out.println(samsung.getModel() + " bill is " + samsung.getSumForCall());
 	System.out.println();
 
-	System.out.println(apple.getModel() + " info for the last incoming call: ");
+	System.out.println(apple.getModel());
 	apple.printInfoForTheLastIncomingCall();
 	System.out.println();
 
-	System.out.println(apple.getModel() + " info for the last outgoing call: ");
+	System.out.println(apple.getModel());
 	apple.printInfoForTheLastOutgoingCall();
 	System.out.println();
 
-	System.out.println(samsung.getModel() + " info for the last incoming call: ");
+	System.out.println(samsung.getModel());
 	samsung.printInfoForTheLastIncomingCall();
 	System.out.println();
 
-	System.out.println(samsung.getModel() + " info for the last outgoing call: ");
+	System.out.println(samsung.getModel());
 	samsung.printInfoForTheLastOutgoingCall();
+	System.out.println();
     }
 }

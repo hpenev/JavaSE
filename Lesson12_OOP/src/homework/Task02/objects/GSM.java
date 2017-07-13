@@ -85,9 +85,10 @@ public class GSM {
 
     public void printInfoForTheLastOutgoingCall() {
 	if (this.lastOutgoingCall != null) {
-	    System.out.println("duration: " + this.lastOutgoingCall.getDuration());
-	    System.out.println("caller: " + this.lastOutgoingCall.getCaller());
-	    System.out.println("receiver: " + this.lastOutgoingCall.getReceiver());
+	    System.out.println("Info For The Last Outgoing Call:");
+	    System.out.println("duration: \t" + this.lastOutgoingCall.getDuration());
+	    System.out.println("caller: \t" + this.lastOutgoingCall.getCaller());
+	    System.out.println("receiver: \t" + this.lastOutgoingCall.getReceiver());
 	} else {
 	    System.out.println("there is no last outgoing call");
 	}
@@ -95,9 +96,10 @@ public class GSM {
 
     public void printInfoForTheLastIncomingCall() {
 	if (this.lastIncomingCall != null) {
-	    System.out.println("duration: " + this.lastIncomingCall.getDuration());
-	    System.out.println("caller: " + this.lastIncomingCall.getCaller());
-	    System.out.println("receiver: " + this.lastIncomingCall.getReceiver());
+	    System.out.println("Info For The Last Incoming Call:");
+	    System.out.println("duration: \t" + this.lastIncomingCall.getDuration());
+	    System.out.println("caller: \t" + this.lastIncomingCall.getCaller());
+	    System.out.println("receiver: \t" + this.lastIncomingCall.getReceiver());
 	} else {
 	    System.out.println("there is no last incoming call");
 	}
