@@ -2,8 +2,11 @@ package homework.Task02;
 
 public class test {
     public static void main(String[] args) {
-	GSM samsung = new GSM("Samsung Galaxy S8", "0886584888");
-	GSM apple = new GSM("Apple Iphone 7 Plus", "0871981538");
+	GSM samsung = new GSM("Samsung Galaxy S8");
+	GSM apple = new GSM("Apple Iphone 7 Plus");
+
+	samsung.insertSimCard("0886584888");
+	apple.insertSimCard("0871981538");
 
 	samsung.call(apple, 12);
 	samsung.call(apple, 14);

@@ -8,48 +8,31 @@ public class GSM {
     private Call lastIncomingCall;
     private Call lastOutgoingCall;
 
-    GSM(String model, String simCardNumber) {
+    GSM(String model) {
 	setModel(model);
-	insertSimCard(simCardNumber);
 	this.outgoingCallsDuration = 0;
     }
 
-    String getModel() {
-	return model;
-    }
-
-    void setModel(String model) {
-	if (model != null && !model.isEmpty()) {
-	    this.model = model;
-	} else {
-	    System.out.println("cannot assign GSM model");
-
-	}
-    }
-
-    public void setSimMoblileNumber(String simMoblileNumber) {
-	if (simMoblileNumber.length() == 10 && simMoblileNumber.indexOf("08") == 0) {
-	    this.simMoblileNumber = simMoblileNumber;
-	} else {
-	    System.out.println("Incorrect sim Mobile Number");
-	}
-    }
-
-    private void insertSimCard(String simCardNumber) {
+    void insertSimCard(String simMoblileNumber) {
 	if (this.hasSimCard) {
 	    System.out.println("There are sim card in this GSM");
 	} else {
 	    this.hasSimCard = true;
-	    setSimMoblileNumber(simCardNumber);
+	    setSimMoblileNumber(simMoblileNumber);
 	}
     }
 
     void removeSimCard() {
 	if (this.hasSimCard) {
+	    setSimMoblileNumber(null);
 	    this.hasSimCard = false;
 	} else {
 	    System.out.println("Already removed");
 	}
+    }
+
+    String getModel() {
+	return model;
     }
 
     void call(GSM receiver, int duratuion) {
@@ -58,8 +41,13 @@ public class GSM {
 	    return;
 	}
 
-	if (!this.hasSimCard || !receiver.hasSimCard) {
-	    System.out.println("One of the phones does not have sim card");
+	if (!this.hasSimCard) {
+	    System.out.println(this.getModel() + " does not have sim card");
+	    return;
+	}
+
+	if (!receiver.hasSimCard) {
+	    System.out.println(receiver.getModel() + " does not have sim card");
 	    return;
 	}
 
@@ -97,4 +85,25 @@ public class GSM {
 	    System.out.println("there is no last incoming call");
 	}
     }
+
+    private void setModel(String model) {
+	if (model != null && !model.isEmpty()) {
+	    this.model = model;
+	} else {
+	    System.out.println("cannot assign GSM model");
+	}
+    }
+
+    private void setSimMoblileNumber(String simMoblileNumber) {
+	if (simMoblileNumber != null && !simMoblileNumber.isEmpty()) {
+	    if (simMoblileNumber.length() == 10 && simMoblileNumber.indexOf("08") == 0) {
+		this.simMoblileNumber = simMoblileNumber;
+	    } else {
+		System.out.println("Incorrect sim Mobile Number");
+	    }
+	} else {
+	    System.out.println("sim mobile nummber cannot be null or empty");
+	}
+    }
+
 }
