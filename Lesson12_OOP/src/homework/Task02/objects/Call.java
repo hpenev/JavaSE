@@ -1,4 +1,4 @@
-package homework.Task02;
+package homework.Task02.objects;
 
 public class Call {
 
