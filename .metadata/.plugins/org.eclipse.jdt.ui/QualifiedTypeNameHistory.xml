@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.swing.RowFilter"/>
-<fullyQualifiedTypeName name="bookChapter16_Recursion.Task07"/>
 <fullyQualifiedTypeName name="javax.swing.undo.UndoableEditSupport"/>
 <fullyQualifiedTypeName name="javax.print.PrintServiceLookup"/>
 <fullyQualifiedTypeName name="java.rmi.activation.UnknownGroupException"/>
@@ -57,7 +55,9 @@
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="org.omg.CORBA.PRIVATE_MEMBER"/>
 <fullyQualifiedTypeName name="homework.Task02.Call"/>
+<fullyQualifiedTypeName name="javax.naming.PartialResultException"/>
 <fullyQualifiedTypeName name="homework.Task02.GSM"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="javax.naming.PartialResultException"/>
+<fullyQualifiedTypeName name="homework.Task02.SimCard"/>
+<fullyQualifiedTypeName name="homework.Task02.objects.SimCard"/>
 </qualifiedTypeNameHistroy>
