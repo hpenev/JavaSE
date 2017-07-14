@@ -1,6 +1,6 @@
 package homework.Task02.objects;
 
-public class Call {
+class Call {
 
     static double priceForAMinute = 0.11;
 

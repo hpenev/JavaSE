@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.swing.undo.UndoableEditSupport"/>
-<fullyQualifiedTypeName name="javax.print.PrintServiceLookup"/>
-<fullyQualifiedTypeName name="java.rmi.activation.UnknownGroupException"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.BootstrapMethodError"/>
-<fullyQualifiedTypeName name="java.lang.Iterable"/>
-<fullyQualifiedTypeName name="javax.management.BadBinaryOpValueExpException"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="java.awt.RenderingHints"/>
-<fullyQualifiedTypeName name="quickSort"/>
-<fullyQualifiedTypeName name="javax.naming.ldap.ExtendedRequest"/>
-<fullyQualifiedTypeName name="java.time.chrono.MinguoChronology"/>
-<fullyQualifiedTypeName name="bookChapter8.Factorial_Recursion"/>
-<fullyQualifiedTypeName name="org.omg.PortableServer.ID_ASSIGNMENT_POLICY_ID"/>
 <fullyQualifiedTypeName name="javax.sound.midi.Receiver"/>
 <fullyQualifiedTypeName name="java.lang.Number"/>
 <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
@@ -37,7 +23,6 @@
 <fullyQualifiedTypeName name="Person"/>
 <fullyQualifiedTypeName name="Chocolate"/>
 <fullyQualifiedTypeName name="org.ietf.jgss.GSSManager"/>
-<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="homework.Fighter"/>
@@ -46,7 +31,6 @@
 <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="mortalKombat.Player"/>
-<fullyQualifiedTypeName name="inClass.Car"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="javax.lang.model.element.PackageElement"/>
@@ -57,7 +41,23 @@
 <fullyQualifiedTypeName name="homework.Task02.Call"/>
 <fullyQualifiedTypeName name="javax.naming.PartialResultException"/>
 <fullyQualifiedTypeName name="homework.Task02.GSM"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="homework.Task02.SimCard"/>
 <fullyQualifiedTypeName name="homework.Task02.objects.SimCard"/>
+<fullyQualifiedTypeName name="java.awt.Frame"/>
+<fullyQualifiedTypeName name="lesson14_homework.Task02.Student"/>
+<fullyQualifiedTypeName name="lesson14_homework.Task02.StudentGroup"/>
+<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+<fullyQualifiedTypeName name="java.awt.font.TextLayout.CaretPolicy"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicTreeUI.TreeCancelEditingAction"/>
+<fullyQualifiedTypeName name="inClass.Person"/>
+<fullyQualifiedTypeName name="inClass.CarShop"/>
+<fullyQualifiedTypeName name="homework.Task02.objects.Call"/>
+<fullyQualifiedTypeName name="inClass.Car"/>
+<fullyQualifiedTypeName name="warGame.Game"/>
+<fullyQualifiedTypeName name="warGame.Card"/>
+<fullyQualifiedTypeName name="warGame.Player"/>
+<fullyQualifiedTypeName name="java.security.PrivateKey"/>
+<fullyQualifiedTypeName name="ticTakToe.Desk"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="ticTakToe.Player"/>
 </qualifiedTypeNameHistroy>
