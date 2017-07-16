@@ -5,8 +5,10 @@
 	<item value="194" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth1"/>
 	<item value="121" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth0"/>
 	<section name="conditionHistory">
-		<item value="1" key="conditionHistoryEntryCount"/>
-		<item value="i==7" key="conditionHistoryEntry_0"/>
+		<item value="3" key="conditionHistoryEntryCount"/>
+		<item value="turn==5" key="conditionHistoryEntry_0"/>
+		<item value="round==5" key="conditionHistoryEntry_1"/>
+		<item value="i==7" key="conditionHistoryEntry_2"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
 		<item value="500" key="SashWeightTree"/>

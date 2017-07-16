@@ -4,85 +4,31 @@ import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) {
+	Player p1 = new Player("Pesho");
+	Player p2 = new Player("Gosho");
 
-	Scanner sc = new Scanner(System.in);
-
-	String name1;
-	String name2;
-	Player p1;
-	Player p2;
-
-	do {
-	    System.out.print("Player 1: ");
-	    name1 = sc.nextLine();
-	    if (name1.isEmpty() || name1 == null) {
-		System.out.println("Invalid name " + name1);
-	    } else {
-		p1 = new Player(name1);
-		break;
-	    }
-	} while (true);
-
-	do {
-	    System.out.print("Player 2: ");
-	    name2 = sc.nextLine();
-	    if (name2.isEmpty() || name2 == null) {
-		System.out.println("Invalid name " + name2);
-	    } else {
-		p2 = new Player(name2);
-		break;
-	    }
-	} while (true);
+	// setPlayerName(p1);
+	// setPlayerName(p2);
 
 	p1.setOpponent(p2);
 	p2.setOpponent(p1);
 
-	char symbol1;
-	do {
-	    System.out.printf("%s symbol: ", p1.getName());
-	    symbol1 = sc.nextLine().charAt(0);
-	    System.out.println(symbol1);
-
-	    if (symbol1 == 'X' || symbol1 == 'O') {
-		if (p1.setSymbol(symbol1)) {
-		    break;
-		}
-	    } else {
-		System.out.println("Invalid symbol");
-	    }
-	} while (true);
-
-	char symbol2;
-	do {
-	    System.out.printf("%s symbol: ", p2.getName());
-	    symbol2 = sc.nextLine().charAt(0);
-	    if (symbol2 == 'X' || symbol2 == 'O') {
-		if (p2.setSymbol(symbol2)) {
-		    break;
-		}
-	    } else {
-		System.out.println("Invalid symbol");
-	    }
-	} while (true);
+	setSymbolForPlayer(p1);
+	setSymbolForPlayer(p2);
 
 	Desk desk = new Desk();
 	p1.setDesk(desk);
 	p2.setDesk(desk);
 	desk.printDesk();
 
-	int i, j;
-	while (true) {
-	    do {
-		System.out.printf("%s draw %s at coordinates: ", p1.getName(), p1.getSymbol());
-		i = sc.nextInt();
-		j = sc.nextInt();
-		if (i >= 0 && i < 3) {
-		    break;
-		}
-	    } while (true);
+	int turn = 1;
 
-	    p1.drawSymbolAt(i, j);
+	while (true) {
+	    System.out.println("--------- Turn: " + turn++ + "---------");
+
+	    playerDrawSymbolAtCoordinates(p1);
 	    desk.printDesk();
+
 	    if (p1.isWinner()) {
 		System.out.printf("%s Wins", p2.getName());
 		break;
@@ -91,17 +37,11 @@ public class test {
 		System.out.println("No one wins");
 		break;
 	    }
-	    do {
-		System.out.printf("%s draw %s at coordinates: ", p2.getName(), p2.getSymbol());
-		i = sc.nextInt();
-		j = sc.nextInt();
-		if (i >= 0 && i < 3) {
-		    break;
-		}
-	    } while (true);
 
-	    p2.drawSymbolAt(i, j);
+	    System.out.println("--------- Turn: " + turn++ + "---------");
+	    playerDrawSymbolAtCoordinates(p2);
 	    desk.printDesk();
+
 	    if (p2.isWinner()) {
 		System.out.printf("%s Wins", p2.getName());
 		break;
@@ -111,6 +51,47 @@ public class test {
 		break;
 	    }
 	}
+    }
 
+    private static void playerDrawSymbolAtCoordinates(Player p) {
+	Scanner sc = new Scanner(System.in);
+	int i, j;
+	do {
+	    System.out.printf("%s draw %s at coordinates: ", p.getName(), p.getSymbol());
+	    i = sc.nextInt();
+	    j = sc.nextInt();
+	    if (i >= 0 && i < 3) {
+		break;
+	    }
+	} while (true);
+	p.drawSymbolAt(i, j);
+    }
+
+    private static void setSymbolForPlayer(Player p1) {
+	Scanner sc = new Scanner(System.in);
+	char symbol1;
+	do {
+	    System.out.printf("%s symbol: ", p1.getName());
+	    symbol1 = sc.nextLine().charAt(0);
+	    if (p1.setSymbol(symbol1)) {
+		break;
+	    } else {
+		System.out.println("Invalid symbol");
+	    }
+	} while (true);
+    }
+
+    private static void setPlayerName(Player p) {
+	Scanner sc = new Scanner(System.in);
+	do {
+	    System.out.print("Player name: ");
+	    String name = sc.nextLine();
+
+	    if (p.setName(name)) {
+		break;
+	    } else {
+		System.out.println("Invalid name " + name);
+	    }
+	} while (true);
     }
 }

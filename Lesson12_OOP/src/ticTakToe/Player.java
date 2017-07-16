@@ -20,6 +20,21 @@ public class Player {
 	}
     }
 
+    Player() {
+
+    }
+
+    boolean setName(String name) {
+	if (name != null && !name.isEmpty()) {
+	    this.name = name;
+	    System.out.println("Player's name is set");
+	    return true;
+	} else {
+	    System.out.println("Player's name is NOT set");
+	    return false;
+	}
+    }
+
     Player(String name) {
 	if (name != null && !name.isEmpty()) {
 	    this.name = name;
