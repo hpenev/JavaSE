@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.awt.font.TextHitInfo"/>
 <fullyQualifiedTypeName name="java.util.IllegalFormatCodePointException"/>
 <fullyQualifiedTypeName name="javax.security.auth.Subject"/>
 <fullyQualifiedTypeName name="javax.jws.WebParam"/>
@@ -42,7 +41,6 @@
 <fullyQualifiedTypeName name="inClass.CarShop"/>
 <fullyQualifiedTypeName name="homework.Task02.objects.Call"/>
 <fullyQualifiedTypeName name="inClass.Car"/>
-<fullyQualifiedTypeName name="warGame.Game"/>
 <fullyQualifiedTypeName name="java.security.PrivateKey"/>
 <fullyQualifiedTypeName name="javax.print.attribute.standard.Destination"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
@@ -53,11 +51,13 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="warGame.Deck"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="warGame.Card"/>
 <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
-<fullyQualifiedTypeName name="warGame.Player"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="ticTakToe.Desk"/>
 <fullyQualifiedTypeName name="javax.security.auth.Destroyable"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="warGame.Game"/>
+<fullyQualifiedTypeName name="warGame.Player"/>
+<fullyQualifiedTypeName name="warGame.Card"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
