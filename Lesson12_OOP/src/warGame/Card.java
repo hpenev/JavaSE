@@ -1,5 +1,7 @@
 package warGame;
 
+import java.util.Random;
+
 public class Card {
     private char weight;
     private char suit;
@@ -38,4 +40,34 @@ public class Card {
 	return false;
     }
 
+    static void mixCards(Card[] cards) {
+	Random random = new Random();
+	for (int i = 0; i < cards.length; i++) {
+	    int randomPos = random.nextInt(cards.length);
+	    Card temp = cards[i];
+	    cards[i] = cards[randomPos];
+	    cards[randomPos] = temp;
+	}
+    }
+
+    static void printCards(Player p1, Player p2) {
+
+	Card[] p1Cards = p1.getCards();
+	System.out.print(p1.getName() + " cards: ");
+	for (int i = 0; i < p1Cards.length; i++) {
+	    System.out.print(p1Cards[i].getWeight());
+	    System.out.print(p1Cards[i].getSuit());
+	    System.out.print(" ");
+	}
+	System.out.println();
+
+	Card[] p2Cards = p2.getCards();
+	System.out.print(p2.getName() + " cards: ");
+	for (int i = 0; i < p2Cards.length; i++) {
+	    System.out.print(p2Cards[i].getWeight());
+	    System.out.print(p2Cards[i].getSuit());
+	    System.out.print(" ");
+	}
+	System.out.println();
+    }
 }
