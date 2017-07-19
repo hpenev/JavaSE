@@ -47,6 +47,7 @@ public class StudentGroup {
 	if (this.freePlaces != 5) {
 	    for (int i = 0; i < students.length; i++) {
 		if (this.students[i] == null) {
+		    // continue;
 		    break;
 		}
 
