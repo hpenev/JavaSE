@@ -53,7 +53,9 @@ public class Game {
 	return war(p1, p2, cardsWin);
     }
 
-    static boolean battle(Player p1, Player p2, Card[] winCards) {
+    static boolean battle(Player p1, Player p2) {
+
+	Card[] winCards = new Card[2];
 	if (p1.cardsLeft() < 1) {
 	    Game.p2wins++;
 	    System.out.println("Winer is " + p2.getName());

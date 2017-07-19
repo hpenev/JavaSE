@@ -24,7 +24,7 @@ public class demo {
 
 	    Card.printCards(p1, p2);
 
-	    hasWinner = Game.battle(p1, p2, new Card[2]);
+	    hasWinner = Game.battle(p1, p2);
 
 	    if (hasWinner) {
 		break;

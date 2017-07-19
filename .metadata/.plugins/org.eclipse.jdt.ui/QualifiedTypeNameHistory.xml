@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.IllegalFormatCodePointException"/>
-<fullyQualifiedTypeName name="javax.security.auth.Subject"/>
-<fullyQualifiedTypeName name="javax.jws.WebParam"/>
-<fullyQualifiedTypeName name="java.lang.Character"/>
-<fullyQualifiedTypeName name="java.io.FilterInputStream"/>
-<fullyQualifiedTypeName name="java.lang.InstantiationError"/>
-<fullyQualifiedTypeName name="java.awt.Window"/>
-<fullyQualifiedTypeName name="javax.swing.SortingFocusTraversalPolicy"/>
-<fullyQualifiedTypeName name="java.util.PrimitiveIterator.OfDouble"/>
 <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
 <fullyQualifiedTypeName name="java.awt.CardLayout"/>
 <fullyQualifiedTypeName name="car"/>
@@ -18,7 +9,6 @@
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="homework.Fighter"/>
 <fullyQualifiedTypeName name="mortalKombat.Fighter"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="mortalKombat.Player"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
@@ -27,7 +17,6 @@
 <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 <fullyQualifiedTypeName name="org.omg.CORBA.PRIVATE_MEMBER"/>
 <fullyQualifiedTypeName name="homework.Task02.Call"/>
-<fullyQualifiedTypeName name="javax.naming.PartialResultException"/>
 <fullyQualifiedTypeName name="homework.Task02.GSM"/>
 <fullyQualifiedTypeName name="homework.Task02.SimCard"/>
 <fullyQualifiedTypeName name="homework.Task02.objects.SimCard"/>
@@ -48,16 +37,27 @@
 <fullyQualifiedTypeName name="ticTakToe.Player"/>
 <fullyQualifiedTypeName name="javax.naming.NameAlreadyBoundException"/>
 <fullyQualifiedTypeName name="java.lang.InheritableThreadLocal"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="warGame.Deck"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
-<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="ticTakToe.Desk"/>
 <fullyQualifiedTypeName name="javax.security.auth.Destroyable"/>
 <fullyQualifiedTypeName name="java.lang.Boolean"/>
 <fullyQualifiedTypeName name="warGame.Game"/>
 <fullyQualifiedTypeName name="warGame.Player"/>
 <fullyQualifiedTypeName name="warGame.Card"/>
+<fullyQualifiedTypeName name="javax.imageio.event.IIOReadWarningListener"/>
+<fullyQualifiedTypeName name="java.util.Locale.FilteringMode"/>
+<fullyQualifiedTypeName name="java.io.ObjectOutputStream.PutField"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.BAD_PARAM"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="boxMan.Player"/>
+<fullyQualifiedTypeName name="boxMan.Box"/>
+<fullyQualifiedTypeName name="org.omg.CosNaming.NamingContextPackage.CannotProceed"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="javax.naming.PartialResultException"/>
+<fullyQualifiedTypeName name="java.awt.image.ReplicateScaleFilter"/>
+<fullyQualifiedTypeName name="boxMan.Board"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
