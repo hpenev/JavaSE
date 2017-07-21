@@ -2,14 +2,23 @@ package musicFestival;
 
 public class Stage {
     public static void main(String[] args) {
-	Group g1 = new Group("group1", "22:00", "23:00");
-	Group g2 = new Group("group2", "23:00", "00:00");
-	Group g3 = new Group("group3", "00:00", "01:00");
+	Group TheBeatles = new Group("The Beatles");
+	Group LedZeppelin = new Group("Led Zeppelin");
+	Group PinkFloyd = new Group("Pink Floyd");
+	Group TheRollingStones = new Group("The Rolling Stones");
 
-	Group[] groups = { g1, g2, g3 };
+	Act[] acts = {
+		new Act(20, 21, TheBeatles),
+		new Act(21, 22, LedZeppelin),
+		new Act(22, 23, PinkFloyd),
+		new Act(23, 24, TheRollingStones)
+	};
 
-	Festival festival = new Festival("Sofia", "12.05.2018", groups);
+	Festival festival = new Festival("Sofia", "01.08.2017", 20, acts);
 	System.out.println(festival.toString());
+
+	System.out.println("Festival Starts: ");
+	festival.startFest();
 
     }
 }

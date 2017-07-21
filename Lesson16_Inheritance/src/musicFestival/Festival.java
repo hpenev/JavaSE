@@ -2,13 +2,21 @@ package musicFestival;
 
 public class Festival {
     private String location;
-    private Group[] groups;
     private String date;
+    private int startHour;
+    private Act[] acts;
 
-    public Festival(String location, String date, Group[] groups) {
+    public Festival(String location, String date, int startHour, Act[] acts) {
 	this.date = date;
-	this.groups = groups;
+	this.acts = acts;
 	this.location = location;
+	this.startHour = startHour;
+    }
+
+    void startFest() {
+	for (int i = 0; i < this.acts.length; i++) {
+	    this.acts[i].startAct();
+	}
     }
 
     @Override
@@ -22,8 +30,8 @@ public class Festival {
 	festivalInfo.append("\n");
 	festivalInfo.append("--------Groups------------");
 	festivalInfo.append("\n");
-	for (int i = 0; i < groups.length; i++) {
-	    festivalInfo.append(groups[i].toString());
+	for (int i = 0; i < acts.length; i++) {
+	    festivalInfo.append(acts[i].toString());
 	    festivalInfo.append("\n");
 	}
 	return festivalInfo.toString();

@@ -21,12 +21,19 @@ public class Song {
 	}
     }
 
+    public String singKaraokeVersion() {
+	StringBuilder songInfo = new StringBuilder();
+	songInfo.append("\tName of the song: " + this.name);
+	songInfo.append("\n");
+	return songInfo.toString();
+    }
+
     @Override
     public String toString() {
 	StringBuilder songInfo = new StringBuilder();
-	songInfo.append("\t\tName of the song: " + this.name);
+	songInfo.append("\tName of the song: " + this.name);
 	songInfo.append("\n");
-	songInfo.append("\t\tLyric of the song: " + this.lyric);
+	songInfo.append("\tLyric of the song: " + this.lyric);
 	songInfo.append("\n");
 	return songInfo.toString();
     }
