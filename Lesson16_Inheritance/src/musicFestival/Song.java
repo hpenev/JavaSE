@@ -4,14 +4,6 @@ public class Song {
     private String name;
     private String lyric;
 
-    /**
-     * Create a Song
-     * 
-     * @param name
-     *            - Name of the Song
-     * @param lyric
-     *            - Lyric of the song
-     */
     Song(String name, String lyric) {
 	if (name != null && !name.isEmpty()) {
 	    this.name = name;
@@ -37,5 +29,4 @@ public class Song {
 	songInfo.append("\n");
 	return songInfo.toString();
     }
-
 }

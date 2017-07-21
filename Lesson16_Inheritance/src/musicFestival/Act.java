@@ -24,8 +24,7 @@ public class Act {
 	StringBuilder actInfo = new StringBuilder();
 	actInfo.append("Group:" + this.group.getName());
 	actInfo.append("\n");
-
-	actInfo.append("Start hour: " + this.startHour);
+	actInfo.append("Start hour: " + this.startHour + " - End hour: " + this.endHour);
 	actInfo.append("\n");
 
 	Song[] songs = this.group.getSongs();
@@ -33,9 +32,6 @@ public class Act {
 	    actInfo.append(songs[i]);
 	    actInfo.append("\n");
 	}
-
-	actInfo.append("End hour: " + this.endHour);
-	actInfo.append("\n");
 
 	return actInfo.toString();
     }

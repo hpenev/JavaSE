@@ -3,17 +3,16 @@ package musicFestival;
 public class Festival {
     private String location;
     private String date;
-    private int startHour;
     private Act[] acts;
 
-    public Festival(String location, String date, int startHour, Act[] acts) {
+    public Festival(String location, String date, Act[] acts) {
 	this.date = date;
 	this.acts = acts;
 	this.location = location;
-	this.startHour = startHour;
     }
 
     void startFest() {
+	System.out.println("Festival Starts: ");
 	for (int i = 0; i < this.acts.length; i++) {
 	    this.acts[i].startAct();
 	}

@@ -15,11 +15,11 @@ public class Group {
     }
 
     Song[] getSongs() {
-	return songs;
+	return this.songs;
     }
 
     String getName() {
-	return name;
+	return this.name;
     }
 
     private Song[] CreateSongList() {
@@ -53,14 +53,13 @@ public class Group {
 	groupInfo.append("\n");
 	groupInfo.append("\tGroup musicians:");
 	groupInfo.append("\n");
-	boolean hasVocal = false;
-	for (int i = 0; i < musicians.length; i++) {
-	    groupInfo.append(musicians[i]);
+	for (int i = 0; i < this.musicians.length; i++) {
+	    groupInfo.append(this.musicians[i]);
 	}
 	groupInfo.append("\tGroup Songs:");
 	groupInfo.append("\n");
-	for (int i = 0; i < songs.length; i++) {
-	    groupInfo.append(songs[i]);
+	for (int i = 0; i < this.songs.length; i++) {
+	    groupInfo.append(this.songs[i]);
 	}
 	return groupInfo.toString();
     }
@@ -73,16 +72,16 @@ public class Group {
 
     void singSongs() {
 	System.out.println("Start singing:");
-	for (int i = 0; i < songs.length; i++) {
+	for (int i = 0; i < this.songs.length; i++) {
 	    if (hasVocal) {
-		System.out.println(songs[i].toString());
+		System.out.println(this.songs[i].toString());
 	    } else {
-		System.out.println(songs[i].singKaraokeVersion());
+		System.out.println(this.songs[i].singKaraokeVersion());
 	    }
 	}
     }
 
     Musician[] getMusicians() {
-	return musicians;
+	return this.musicians;
     }
 }

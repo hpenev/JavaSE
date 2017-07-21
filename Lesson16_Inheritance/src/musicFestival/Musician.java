@@ -34,6 +34,5 @@ public class Musician {
 	} else {
 	    System.out.println("Plays at " + this.instrument);
 	}
-
     }
 }
