@@ -3,7 +3,7 @@ package homework;
 public class Student extends Person {
     private double score;
 
-    protected Student(String name, int age, boolean isMale, double score) {
+    Student(String name, int age, boolean isMale, double score) {
 	super(name, age, isMale);
 	setScore(score);
     }
@@ -20,7 +20,11 @@ public class Student extends Person {
 	}
     }
 
-    protected void showStudentInfo() {
+    protected void howPersonInfo() {
+	showStudentInfo();
+    }
+
+    private void showStudentInfo() {
 	super.howPersonInfo();
 	System.out.println("Score: " + this.score);
     }
