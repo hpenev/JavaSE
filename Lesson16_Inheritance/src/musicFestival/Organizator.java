@@ -1,5 +1,9 @@
 package musicFestival;
 
+import musicFestival.objects.Act;
+import musicFestival.objects.Festival;
+import musicFestival.objects.Group;
+
 public class Organizator {
     public static void main(String[] args) {
 	Group TheBeatles = new Group("The Beatles");
@@ -13,8 +17,8 @@ public class Organizator {
 	};
 
 	Festival festival = new Festival("Sofia", "21.07.2017", acts);
-	System.out.println(festival.toString());
 
+	festival.showInfo();
 	festival.startFest();
     }
 }

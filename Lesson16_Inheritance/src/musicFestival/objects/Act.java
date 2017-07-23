@@ -1,11 +1,11 @@
-package musicFestival;
+package musicFestival.objects;
 
 public class Act {
     private int startHour;
     private int endHour;
     private Group group;
 
-    Act(int startHour, int endHour, Group group) {
+    public Act(int startHour, int endHour, Group group) {
 	this.startHour = startHour;
 	this.endHour = endHour;
 	this.group = group;

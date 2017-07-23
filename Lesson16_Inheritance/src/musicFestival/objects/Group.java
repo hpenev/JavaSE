@@ -1,4 +1,4 @@
-package musicFestival;
+package musicFestival.objects;
 
 import java.util.Random;
 
@@ -8,7 +8,7 @@ public class Group {
     private Musician[] musicians;
     private boolean hasVocal;
 
-    Group(String name) {
+    public Group(String name) {
 	this.name = name;
 	this.songs = CreateSongList();
 	this.musicians = CreateMusiciantList();

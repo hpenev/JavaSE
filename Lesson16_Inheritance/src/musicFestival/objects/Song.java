@@ -1,4 +1,4 @@
-package musicFestival;
+package musicFestival.objects;
 
 public class Song {
     private String name;

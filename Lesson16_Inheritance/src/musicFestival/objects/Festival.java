@@ -1,4 +1,4 @@
-package musicFestival;
+package musicFestival.objects;
 
 public class Festival {
     private String location;
@@ -11,15 +11,14 @@ public class Festival {
 	this.location = location;
     }
 
-    void startFest() {
+    public void startFest() {
 	System.out.println("Festival Starts: ");
 	for (int i = 0; i < this.acts.length; i++) {
 	    this.acts[i].startAct();
 	}
     }
 
-    @Override
-    public String toString() {
+    public void showInfo() {
 	StringBuilder festivalInfo = new StringBuilder();
 	festivalInfo.append("---------------Festival Info---------------");
 	festivalInfo.append("\n");
@@ -33,6 +32,6 @@ public class Festival {
 	    festivalInfo.append(acts[i].toString());
 	    festivalInfo.append("\n");
 	}
-	return festivalInfo.toString();
+	System.out.println(festivalInfo.toString());
     }
 }
