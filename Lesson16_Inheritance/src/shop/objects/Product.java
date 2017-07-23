@@ -1,4 +1,4 @@
-package shop;
+package shop.objects;
 
 public class Product {
     private String name;
@@ -20,12 +20,20 @@ public class Product {
 	return false;
     }
 
-    void increseQuantity(double quantity) {
-
+    protected void increseQuantity(double quantity) {
+	// refer to subClass
     }
 
-    void decreseQuantity(double quantity) {
+    protected void decreseQuantity(double quantity) {
+	// refer to subClass
+    }
 
+    protected void increseQuantity(int quantity) {
+	// refer to subClass
+    }
+
+    protected void decreseQuantity(int quantity) {
+	// refer to subClass
     }
 
     double getPrice() {

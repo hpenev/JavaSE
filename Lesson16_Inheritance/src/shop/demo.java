@@ -1,16 +1,21 @@
 package shop;
 
+import shop.objects.Buyer;
+import shop.objects.ProductPerKilo;
+import shop.objects.ProductPerUnit;
+import shop.objects.Shop;
+
 public class demo {
     public static void main(String[] args) {
-	Magazine metro = new Magazine("Metro", "address", 1000);
+	Shop metro = new Shop("Metro", "address", 1000);
 
-	ProductKG meat = new ProductKG("Meat", 7.5, 1.5);
-	ProductKG cheese = new ProductKG("Cheese", 12.5, 1.5);
-	ProductKG fish = new ProductKG("Fish", 3.4, 1.5);
+	ProductPerKilo meat = new ProductPerKilo("Meat", 7.5, 1.5);
+	ProductPerKilo cheese = new ProductPerKilo("Cheese", 12.5, 1.5);
+	ProductPerKilo fish = new ProductPerKilo("Fish", 3.4, 1.5);
 
-	ProductPcs beer = new ProductPcs("Beer", 1, 100);
-	ProductPcs book = new ProductPcs("Book", 1, 100);
-	ProductPcs chair = new ProductPcs("Chair", 20, 20);
+	ProductPerUnit beer = new ProductPerUnit("Beer", 1, 100);
+	ProductPerUnit book = new ProductPerUnit("Book", 1, 100);
+	ProductPerUnit chair = new ProductPerUnit("Chair", 20, 20);
 
 	metro.addProduct(meat);
 	metro.addProduct(cheese);
@@ -19,14 +24,21 @@ public class demo {
 	metro.addProduct(book);
 	metro.addProduct(chair);
 
-	metro.revision();
+	Buyer buyer = new Buyer(500, 10);
 
-	Buyer buyer = new Buyer(metro, 100, 10);
-	buyer.addStockInBasket(beer, 20);
-	buyer.addStockInBasket(chair, 20);
-	buyer.addStockInBasket(book, 20);
+	buyer.enterInShop(metro);
 
-	buyer.pay();
-	metro.revision();
+	buyer.addProductInBasket(beer, 20);
+	buyer.addProductInBasket(chair, 20);
+	buyer.addProductInBasket(book, 20);
+	buyer.removeProductInBasket(beer, 19);
+
+	buyer.seeWhatsInTheBasket();
+
+	buyer.leaveShop(metro);
+
+	System.out.println("Shop cash: " + metro.getCash());
+	System.out.println("Buyer cash: " + buyer.getCash());
+
     }
 }
