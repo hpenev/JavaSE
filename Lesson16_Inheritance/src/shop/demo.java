@@ -1,6 +1,7 @@
 package shop;
 
 import shop.objects.Buyer;
+import shop.objects.Product;
 import shop.objects.ProductPerKilo;
 import shop.objects.ProductPerUnit;
 import shop.objects.Shop;
@@ -9,13 +10,13 @@ public class demo {
     public static void main(String[] args) {
 	Shop metro = new Shop("Metro", "address", 1000);
 
-	ProductPerKilo meat = new ProductPerKilo("Meat", 7.5, 1.5);
-	ProductPerKilo cheese = new ProductPerKilo("Cheese", 12.5, 1.5);
-	ProductPerKilo fish = new ProductPerKilo("Fish", 3.4, 1.5);
+	Product meat = new ProductPerKilo("Meat", 7.5, 1.5);
+	Product cheese = new ProductPerKilo("Cheese", 12.5, 1.5);
+	Product fish = new ProductPerKilo("Fish", 3.4, 1.5);
 
-	ProductPerUnit beer = new ProductPerUnit("Beer", 1, 100);
-	ProductPerUnit book = new ProductPerUnit("Book", 1, 100);
-	ProductPerUnit chair = new ProductPerUnit("Chair", 20, 20);
+	Product beer = new ProductPerUnit("Beer", 1, 100);
+	Product book = new ProductPerUnit("Book", 1, 100);
+	Product chair = new ProductPerUnit("Chair", 20, 20);
 
 	metro.addProduct(meat);
 	metro.addProduct(cheese);
@@ -31,7 +32,7 @@ public class demo {
 	buyer.addProductInBasket(beer, 20);
 	buyer.addProductInBasket(chair, 20);
 	buyer.addProductInBasket(book, 20);
-	buyer.removeProductInBasket(beer, 19);
+	buyer.removeProductInBasket(beer, 10);
 
 	buyer.seeWhatsInTheBasket();
 

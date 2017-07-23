@@ -4,6 +4,14 @@ public class Product {
     private String name;
     private double price;
 
+    public Product(String name, double price, double quantityInKg) {
+
+    }
+
+    public Product(String name, double price, int quantityInPcs) {
+
+    }
+
     public Product(String name, double price) {
 	this.name = name;
 	this.price = price;
@@ -13,8 +21,8 @@ public class Product {
 	return name;
     }
 
-    public boolean equals(Product other) {
-	if (this.name.equals(other.getName())) {
+    public boolean equals(Product otherProduct) {
+	if (this.name.equals(otherProduct.getName())) {
 	    return true;
 	}
 	return false;

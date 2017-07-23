@@ -3,8 +3,8 @@ package shop.objects;
 public class Buyer {
     private Shop shop;
     private int cash;
-    private int countCanCarry;
     private Basket basket;
+    private int countCanCarry;
     // Максимален брой артикули, които може да купи.
 
     public Buyer(int cash, int countCanCarry) {
@@ -51,7 +51,8 @@ public class Buyer {
     public void seeWhatsInTheBasket() {
 	for (int i = 0; i < this.basket.productInBasket(); i++) {
 	    Product currentProduct = this.basket.getProduct(i);
-	    System.out.println(currentProduct.getName() + " - " + this.basket.getQuantity(currentProduct));
+	    System.out.println(currentProduct.getName() + " - " + this.basket.getQuantity(currentProduct) + " - "
+		    + currentProduct.getPrice());
 
 	}
     }
