@@ -7,4 +7,15 @@ public class Citizen {
     private String address;
     private int age;
     private Case workingCase;
+
+    public String getName() {
+	return name;
+    }
+
+    public Citizen(String name, String address, int age) {
+	this.name = name;
+	this.address = address;
+	this.age = age;
+    }
+
 }

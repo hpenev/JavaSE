@@ -1,9 +1,13 @@
 package sud.objects.CitizenStuff;
 
-import sud.objects.JuristPositionStuff.Layer;
+import sud.objects.JuristStuff.Lawyer;
 
 public class Accused extends Citizen {
 
-    private Layer[] layers;
+    private Lawyer[] layers;
+
+    public Accused(String name, String address, int age) {
+	super(name, address, age);
+    }
 
 }

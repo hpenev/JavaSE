@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.imageio.event.IIOReadWarningListener"/>
-<fullyQualifiedTypeName name="java.util.Locale.FilteringMode"/>
-<fullyQualifiedTypeName name="java.io.ObjectOutputStream.PutField"/>
-<fullyQualifiedTypeName name="org.omg.CORBA.BAD_PARAM"/>
-<fullyQualifiedTypeName name="boxMan.Player"/>
-<fullyQualifiedTypeName name="boxMan.Box"/>
-<fullyQualifiedTypeName name="org.omg.CosNaming.NamingContextPackage.CannotProceed"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="java.awt.image.ReplicateScaleFilter"/>
 <fullyQualifiedTypeName name="boxMan.Board"/>
@@ -50,14 +43,21 @@
 <fullyQualifiedTypeName name="sud.objects.Citizen"/>
 <fullyQualifiedTypeName name="sud.objects.People.Citizen"/>
 <fullyQualifiedTypeName name="sud.objects.JuristStuff.Layer"/>
-<fullyQualifiedTypeName name="sud.objects.JuristStuff.Judge"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="sud.objects.Jury"/>
-<fullyQualifiedTypeName name="sud.objects.CitizenStuff.Accused"/>
 <fullyQualifiedTypeName name="sud.objects.CitizenStuff.Prosecutor"/>
-<fullyQualifiedTypeName name="sud.objects.CitizenStuff.Witness"/>
 <fullyQualifiedTypeName name="sud.objects.Case"/>
 <fullyQualifiedTypeName name="sud.objects.JuristPositionStuff.Prosecutor"/>
 <fullyQualifiedTypeName name="sud.objects.JuristPositionStuff.Jurist"/>
 <fullyQualifiedTypeName name="java.lang.Process"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="sud.objects.Court"/>
+<fullyQualifiedTypeName name="sud.objects.CaseStuff.CivilCase"/>
+<fullyQualifiedTypeName name="sud.objects.JuristStuff.Judge"/>
+<fullyQualifiedTypeName name="sud.objects.CitizenStuff.Accused"/>
+<fullyQualifiedTypeName name="sud.objects.CitizenStuff.Witness"/>
+<fullyQualifiedTypeName name="sud.objects.CitizenStuff.Accuser"/>
+<fullyQualifiedTypeName name="sud.objects.JuristStuff.Juror"/>
+<fullyQualifiedTypeName name="sud.objects.JuristStuff.Lawyer"/>
+<fullyQualifiedTypeName name="sud.objects.CaseStuff.CriminalCase"/>
+<fullyQualifiedTypeName name="sud.objects.JuristStuff.Prosecutor"/>
 </qualifiedTypeNameHistroy>

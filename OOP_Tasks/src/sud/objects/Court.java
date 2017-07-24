@@ -1,7 +1,7 @@
 package sud.objects;
 
 import sud.objects.CaseStuff.Case;
-import sud.objects.JuristPositionStuff.Jurist;
+import sud.objects.JuristStuff.Jurist;
 
 public class Court {
     private String name;
