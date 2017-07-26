@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="java.awt.image.ReplicateScaleFilter"/>
-<fullyQualifiedTypeName name="boxMan.Board"/>
-<fullyQualifiedTypeName name="Person"/>
-<fullyQualifiedTypeName name="Student"/>
-<fullyQualifiedTypeName name="Employee"/>
 <fullyQualifiedTypeName name="homework.Person"/>
 <fullyQualifiedTypeName name="homework.Student"/>
 <fullyQualifiedTypeName name="homework.Employee"/>
@@ -49,7 +43,6 @@
 <fullyQualifiedTypeName name="sud.objects.JuristPositionStuff.Prosecutor"/>
 <fullyQualifiedTypeName name="sud.objects.JuristPositionStuff.Jurist"/>
 <fullyQualifiedTypeName name="java.lang.Process"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="sud.objects.Court"/>
 <fullyQualifiedTypeName name="sud.objects.CaseStuff.CivilCase"/>
 <fullyQualifiedTypeName name="sud.objects.JuristStuff.Judge"/>
@@ -60,4 +53,11 @@
 <fullyQualifiedTypeName name="sud.objects.JuristStuff.Lawyer"/>
 <fullyQualifiedTypeName name="sud.objects.CaseStuff.CriminalCase"/>
 <fullyQualifiedTypeName name="sud.objects.JuristStuff.Prosecutor"/>
+<fullyQualifiedTypeName name="abstraction.Granade"/>
+<fullyQualifiedTypeName name="abstraction.Explodable"/>
+<fullyQualifiedTypeName name="abstraction.Dynamite"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="shop.objects.Validate"/>
 </qualifiedTypeNameHistroy>
