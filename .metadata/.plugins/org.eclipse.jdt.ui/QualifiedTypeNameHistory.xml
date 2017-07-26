@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="homework.Person"/>
-<fullyQualifiedTypeName name="homework.Student"/>
-<fullyQualifiedTypeName name="homework.Employee"/>
 <fullyQualifiedTypeName name="musicFestival.Instrument"/>
 <fullyQualifiedTypeName name="musicFestival.Musician"/>
 <fullyQualifiedTypeName name="java.awt.RadialGradientPaint"/>
@@ -58,6 +55,9 @@
 <fullyQualifiedTypeName name="abstraction.Dynamite"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="shop.objects.Validate"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="taskEmployee.Employee"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="taskEmployee.Task"/>
 </qualifiedTypeNameHistroy>

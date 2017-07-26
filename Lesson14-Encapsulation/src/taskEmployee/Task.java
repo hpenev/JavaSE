@@ -9,6 +9,10 @@ public class Task {
 	setWorkingHours(workingHours);
     }
 
+    String getName() {
+	return name;
+    }
+
     private void setName(String name) {
 	if (name != null && !name.isEmpty()) {
 	    this.name = name;
