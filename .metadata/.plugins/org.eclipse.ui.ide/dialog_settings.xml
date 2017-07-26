@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Dropbox\ITTalents\projects\Exam02-OOPTasks"/>
+		<item value="C:\Dropbox\ITTalents\projects\Lecture01"/>
 		<item value="C:\Dropbox\ITTalents\projects\Lesson16_Inheritance"/>
 		<item value="C:\Dropbox\ITTalents\projects"/>
 		<item value="C:\Users\Home\Dropbox\ITTalents\projects\Lesson2Homework"/>
