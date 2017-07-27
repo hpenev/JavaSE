@@ -1,9 +1,18 @@
 package taskEmployee;
 
-public class Employee {
+public class Employee implements IWorker {
     private String name;
     private Task currentTask;
     private int hoursLeft;
+    private static AllWork allWork;
+
+    public static void setAllWork(AllWork allWork) {
+	Employee.allWork = allWork;
+    }
+
+    public static AllWork getAllWork() {
+	return allWork;
+    }
 
     Employee(String name) {
 	setName(name);
@@ -21,7 +30,7 @@ public class Employee {
 	return name;
     }
 
-    void setCurrentTask(Task currentTask) {
+    public void setCurrentTask(Task currentTask) {
 	if (currentTask != null) {
 	    this.currentTask = currentTask;
 	}
@@ -41,33 +50,39 @@ public class Employee {
 	}
     }
 
-    void work() {
-	System.out.println("Before start worksing");
-	showReport();
-
-	if (currentTask != null) {
-	    if (this.hoursLeft >= currentTask.getWorkingHours()) {
-		this.hoursLeft -= currentTask.getWorkingHours();
-		this.currentTask.setWorkingHours(0);
-	    } else {
-		int hours = this.currentTask.getWorkingHours() - this.hoursLeft;
-		this.currentTask.setWorkingHours(hours);
-		this.hoursLeft = 0;
-	    }
-	} else {
-	    System.out.println("No current task");
+    public void work() {
+	if (this.currentTask == null) {
+	    getNewTask();
 	}
 
-	System.out.println("After finish working");
+	while (this.hoursLeft != 0 && this.currentTask.getWorkingHours() != 0) {
+	    this.hoursLeft--;
+	    this.currentTask.setWorkingHours(this.currentTask.getWorkingHours() - 1);
+	}
+
 	showReport();
+
+	if (this.currentTask.getWorkingHours() == 0 && !this.allWork.isAllTaskAssigned()) {
+	    getNewTask();
+	    work();
+	}
+    }
+
+    private void getNewTask() {
+	this.currentTask = this.allWork.getNextTask();
+	System.out.println(this.name + " gets task " + this.currentTask.getName() + " overall time: "
+		+ this.currentTask.getWorkingHours());
+    }
+
+    public void startWorkingDay() {
+	this.hoursLeft = 8;
     }
 
     private void showReport() {
-	System.out.println("----------------------------");
 	System.out.println("Name: " + this.name);
-	System.out.println("employee hours left: " + this.hoursLeft);
-	System.out.println(this.currentTask);
-	System.out.println("----------------------------");
+	System.out.println(
+		"Current task: " + this.currentTask.getName() + " hours left: " + this.currentTask.getWorkingHours());
+	System.out.println("Work hours left for today:" + this.hoursLeft);
     }
 
 }

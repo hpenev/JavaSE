@@ -6,17 +6,43 @@ public class AllWork {
     private int currentUnassignedTask;
 
     AllWork() {
-	freePlacesForTasks = 10;
-	currentUnassignedTask = 0;
+	this.freePlacesForTasks = 10;
+	this.tasks = new Task[freePlacesForTasks];
+	this.currentUnassignedTask = 0;
+    }
+
+    boolean isAllTaskAssigned() {
+	if (currentUnassignedTask == tasks.length) {
+	    return true;
+	}
+	return false;
     }
 
     void addTask(Task task) {
-	this.tasks[this.currentUnassignedTask++] = task;
-	this.freePlacesForTasks--;
+	if (this.freePlacesForTasks == 0) {
+	    System.out.println("Full of tasks");
+	    return;
+	}
+
+	if (task == null) {
+	    System.out.println("null task cannot be added");
+	    return;
+	}
+
+	this.tasks[this.tasks.length - freePlacesForTasks--] = task;
+
     }
 
     Task getNextTask() {
+	return this.tasks[currentUnassignedTask++];
+    }
 
-	return null;
+    boolean isAllWorkDone() {
+	for (int i = 0; i < tasks.length; i++) {
+	    if (tasks[i].getWorkingHours() > 0) {
+		return false;
+	    }
+	}
+	return true;
     }
 }
