@@ -1,5 +1,7 @@
 package sud.objects.JuristStuff;
 
+import java.util.ArrayList;
+
 import sud.objects.CitizenStuff.Accused;
 import sud.objects.CitizenStuff.Witness;
 
@@ -19,12 +21,33 @@ public class Prosecutor extends Jurist {
 	}
     }
 
-    public void ask(Witness[] witness, int numberOfQuestion) {
+    public void ask(ArrayList<Witness> witnesses, int numberOfQuestion) {
 	for (int i = 0; i < numberOfQuestion; i++) {
-	    for (int j = 0; j < witness.length; j++) {
+	    for (int j = 0; j < witnesses.size(); j++) {
 		System.out
-			.println("Prosecutor " + this.name + " ask question" + (i + 1) + " to " + witness[j].getName());
+			.println("Prosecutor " + this.name + " ask question" + (i + 1) + " to "
+				+ witnesses.get(j).getName());
 	    }
 	}
+    }
+
+    @Override
+    public boolean isJudge() {
+	return false;
+    }
+
+    @Override
+    public boolean isLawyer() {
+	return false;
+    }
+
+    @Override
+    public boolean isJuror() {
+	return false;
+    }
+
+    @Override
+    public boolean isProsecutor() {
+	return true;
     }
 }

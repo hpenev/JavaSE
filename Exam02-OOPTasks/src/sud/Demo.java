@@ -1,8 +1,7 @@
 package sud;
 
 import sud.objects.Court;
-import sud.objects.CaseStuff.CivilCase;
-import sud.objects.CaseStuff.CriminalCase;
+import sud.objects.CaseStuff.Case;
 import sud.objects.CitizenStuff.Accused;
 import sud.objects.CitizenStuff.Accuser;
 import sud.objects.CitizenStuff.Witness;
@@ -13,34 +12,51 @@ import sud.objects.JuristStuff.Prosecutor;
 
 public class Demo {
     public static void main(String[] args) {
-	Court court = new Court();
+	Court court = new Court("District Court", "Veliko Tarnovo");
 
-	Judge judge = new Judge("Judge1", 12, 12);
-	Accused accused = new Accused("Accused1", "address", 18);
+	for (int i = 0; i < 3; i++) {
+	    court.addJurists(new Judge("Judge" + (i + 1), 12, 12));
+	}
 
-	Witness[] witnesses = {
-		new Witness("w1", "a1", 20),
-		new Witness("w2", "a2", 20)
-	};
+	for (int i = 0; i < 10; i++) {
+	    court.addJurists(new Juror("Juror" + (i + 1), 1, 1));
+	}
 
-	Lawyer[] lawyers = {
-		new Lawyer("L1", 1, 10),
-		new Lawyer("L2", 2, 10)
-	};
+	for (int i = 0; i < 5; i++) {
+	    court.addJurists(new Lawyer("Lawyer" + (i + 1), 1, 10));
+	}
 
-	Accuser accuser = new Accuser("accuser1", "addres", 25, lawyers);
+	for (int i = 0; i < 2; i++) {
+	    court.addJurists(new Prosecutor("Prosecutor" + (i + 1), 10, 10));
+	}
 
-	Juror[] jury = {
-		new Juror("j1", 1, 1),
-		new Juror("j2", 2, 2),
-		new Juror("j3", 3, 3)
-	};
+	for (int i = 0; i < 5; i++) {
+	    court.addCitizen(new Accuser("Accuser" + (i + 1), "Sofia", 20));
+	}
 
-	CivilCase case1 = new CivilCase(judge, accused, witnesses, accuser, jury);
+	for (int i = 0; i < 5; i++) {
+	    court.addCitizen(new Accused("Accused" + (i + 1), "Sofia", 18));
+	}
 
-	Prosecutor prosecutor = new Prosecutor("P1", 10, 10);
-	CriminalCase case2 = new CriminalCase(judge, accused, witnesses, prosecutor, jury);
-	case1.perform();
-	case2.perform();
+	for (int i = 0; i < 10; i++) {
+	    court.addCitizen(new Witness("Witness" + (i + 1), "Sofia", 55));
+	}
+
+	court.createCivilCase();
+	court.createCivilCase();
+	court.createCivilCase();
+
+	court.createCriminalCase();
+	court.createCriminalCase();
+	court.createCriminalCase();
+
+	System.out.println(court);
+
+	for (Case c : court.getCases()) {
+	    c.perform();
+	}
+
+	System.out.println(court);
+
     }
 }

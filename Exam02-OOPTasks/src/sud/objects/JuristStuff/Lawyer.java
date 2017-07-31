@@ -25,4 +25,24 @@ public class Lawyer extends Jurist {
 	}
 
     }
+
+    @Override
+    public boolean isJudge() {
+	return false;
+    }
+
+    @Override
+    public boolean isLawyer() {
+	return true;
+    }
+
+    @Override
+    public boolean isJuror() {
+	return false;
+    }
+
+    @Override
+    public boolean isProsecutor() {
+	return false;
+    }
 }

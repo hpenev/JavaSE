@@ -1,5 +1,7 @@
 package sud.objects.CaseStuff;
 
+import java.util.ArrayList;
+
 import sud.objects.CitizenStuff.Accused;
 import sud.objects.CitizenStuff.Accuser;
 import sud.objects.CitizenStuff.Witness;
@@ -9,21 +11,26 @@ import sud.objects.JuristStuff.Juror;
 public class CivilCase extends Case {
 
     private static final String type = "Civil Case";
-    private Juror[] jury = new Juror[3];
+    // jury 3
     private Accuser accuser;
 
-    public CivilCase(Judge judge, Accused accused, Witness[] witnesses, Accuser accuser, Juror[] jury) {
-	super(judge, accused, witnesses);
+    public CivilCase(Judge judge, Accused accused, ArrayList<Witness> witnesses, Accuser accuser,
+	    ArrayList<Juror> jury) {
+	super(judge, accused, witnesses, jury);
 	this.accuser = accuser;
-	this.jury = jury;
     }
 
     public void perform() {
 	super.perform();
-	for (int i = 0; i < this.jury.length; i++) {
-	    this.jury[i].increaseWoringCases();
+	for (int i = 0; i < this.jury.size(); i++) {
+	    this.jury.get(i).increaseWoringCases();
 	}
-	this.accuser.ask(this.accused, 3);
-	this.accuser.ask(this.witnesses, 2);
+
+	for (int i = 0; i < this.accuser.getLayers().size(); i++) {
+	    this.accuser.getLayers().get(i).increaseWoringCases();
+	}
+
+	this.accuser.lawyersAskAccused(this.accused, 3);
+	this.accuser.lawyersAskWitnesses(this.witnesses, 2);
     }
 }
