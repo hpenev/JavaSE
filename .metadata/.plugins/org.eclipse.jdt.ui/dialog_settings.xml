@@ -11,7 +11,7 @@
 	<item value="2" key="CallHierarchyViewPart.field_mode"/>
 	<item value="false" key="SortMembers.sort_all"/>
 	<item value="-1" key="org.eclipse.jdt.uiformatter_page.modify_dialog_tab_page.last_focus_index"/>
-	<item value="2" key="TypeHierarchyViewPart.hierarchyview"/>
+	<item value="1" key="TypeHierarchyViewPart.hierarchyview"/>
 	<item value="500" key="CallHierarchyViewPart.ratio0"/>
 	<item value="1" key="SearchScopeActionGroup.search_scope_type"/>
 	<item value="500" key="CallHierarchyViewPart.ratio3"/>
@@ -89,7 +89,7 @@
 	<section name="JavaElementSearchActions">
 	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
-		<item value="false" key="renameSubpackages"/>
+		<item value="true" key="renameSubpackages"/>
 		<item value="false" key="updateQualifiedNames"/>
 		<item value="*" key="patterns"/>
 		<item value="false" key="updateSimilarElements"/>
@@ -182,6 +182,8 @@
 		<item value="false" key="OmitCallToSuper"/>
 	</section>
 	<section name="quick_assist_proposal_size">
+		<item value="252" key="size.y"/>
+		<item value="646" key="size.x"/>
 	</section>
 	<section name="NewPackageWizardPage">
 		<item value="false" key="create_package_info_java"/>
