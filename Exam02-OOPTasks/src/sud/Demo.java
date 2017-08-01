@@ -1,17 +1,21 @@
 package sud;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+
 import sud.objects.Court;
-import sud.objects.CaseStuff.Case;
-import sud.objects.CitizenStuff.Accused;
-import sud.objects.CitizenStuff.Accuser;
-import sud.objects.CitizenStuff.Witness;
-import sud.objects.JuristStuff.Judge;
-import sud.objects.JuristStuff.Juror;
-import sud.objects.JuristStuff.Lawyer;
-import sud.objects.JuristStuff.Prosecutor;
+import sud.objects.cases.Case;
+import sud.objects.citizens.Accuser;
+import sud.objects.citizens.Defendant;
+import sud.objects.citizens.Witness;
+import sud.objects.jutists.Judge;
+import sud.objects.jutists.Jurist;
+import sud.objects.jutists.Juror;
+import sud.objects.jutists.Lawyer;
+import sud.objects.jutists.Prosecutor;
 
 public class Demo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 	Court court = new Court("District Court", "Veliko Tarnovo");
 
 	for (int i = 0; i < 3; i++) {
@@ -35,7 +39,7 @@ public class Demo {
 	}
 
 	for (int i = 0; i < 5; i++) {
-	    court.addCitizen(new Accused("Accused" + (i + 1), "Sofia", 18));
+	    court.addCitizen(new Defendant("Accused" + (i + 1), "Sofia", 18));
 	}
 
 	for (int i = 0; i < 10; i++) {
@@ -51,12 +55,16 @@ public class Demo {
 	court.createCriminalCase();
 
 	System.out.println(court);
-
+	int counter = 1;
 	for (Case c : court.getCases()) {
+
+	    PrintWriter writer = new PrintWriter("Case" + counter++ + ".txt");
 	    c.perform();
 	}
 
 	System.out.println(court);
+
+	System.out.println("Total jurist questions " + Jurist.questionsJurist);
 
     }
 }

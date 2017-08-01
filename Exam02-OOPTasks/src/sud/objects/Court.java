@@ -2,17 +2,17 @@ package sud.objects;
 
 import java.util.ArrayList;
 
-import sud.objects.CaseStuff.Case;
-import sud.objects.CaseStuff.CivilCase;
-import sud.objects.CaseStuff.CriminalCase;
-import sud.objects.CitizenStuff.Accused;
-import sud.objects.CitizenStuff.Accuser;
-import sud.objects.CitizenStuff.Citizen;
-import sud.objects.CitizenStuff.Witness;
-import sud.objects.JuristStuff.Judge;
-import sud.objects.JuristStuff.Jurist;
-import sud.objects.JuristStuff.Juror;
-import sud.objects.JuristStuff.Prosecutor;
+import sud.objects.cases.Case;
+import sud.objects.cases.CivilCase;
+import sud.objects.cases.CriminalCase;
+import sud.objects.citizens.Accuser;
+import sud.objects.citizens.Citizen;
+import sud.objects.citizens.Defendant;
+import sud.objects.citizens.Witness;
+import sud.objects.jutists.Judge;
+import sud.objects.jutists.Jurist;
+import sud.objects.jutists.Juror;
+import sud.objects.jutists.Prosecutor;
 
 public class Court {
     private String name;
@@ -43,30 +43,28 @@ public class Court {
     }
 
     public void createCivilCase() {
-
 	Judge randomJudge = Jurist.getRandomJudge(jurists);
-	Accused accused = Citizen.getRandomAccused(citizens);
-	accused.setLayers(Jurist.getRandomLawyers(jurists));
+	Defendant defendant = Citizen.getRandomDefendant(citizens);
+	defendant.setLayers(Jurist.getRandomLawyers(jurists));
 	ArrayList<Witness> witnessesForCase = Citizen.getRandomWitnesses(citizens);
 	Accuser accuser = Citizen.getRandomAccuser(citizens);
 	accuser.setLayers(Jurist.getRandomLawyers(jurists));
 	ArrayList<Juror> jury = Jurist.getRandomJury(jurists, 3);
 
-	CivilCase civilCase = new CivilCase(randomJudge, accused, witnessesForCase, accuser, jury);
+	CivilCase civilCase = new CivilCase(randomJudge, defendant, witnessesForCase, jury, accuser);
 
 	this.cases.add(civilCase);
     }
 
     public void createCriminalCase() {
-
 	Judge randomJudge = Jurist.getRandomJudge(jurists);
-	Accused accused = Citizen.getRandomAccused(citizens);
-	accused.setLayers(Jurist.getRandomLawyers(jurists));
+	Defendant defendant = Citizen.getRandomDefendant(citizens);
+	defendant.setLayers(Jurist.getRandomLawyers(jurists));
 	ArrayList<Witness> witnessesForCase = Citizen.getRandomWitnesses(citizens);
 	Prosecutor prosecutor = Jurist.getRandomProsecutor(jurists);
-	ArrayList<Juror> jury = Jurist.getRandomJury(jurists, 3);
+	ArrayList<Juror> jury = Jurist.getRandomJury(jurists, 13);
 
-	CriminalCase criminalCase = new CriminalCase(randomJudge, accused, witnessesForCase, prosecutor, jury);
+	CriminalCase criminalCase = new CriminalCase(randomJudge, defendant, witnessesForCase, jury, prosecutor);
 
 	this.cases.add(criminalCase);
     }

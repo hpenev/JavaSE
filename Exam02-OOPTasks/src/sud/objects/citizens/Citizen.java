@@ -1,17 +1,18 @@
-package sud.objects.CitizenStuff;
+package sud.objects.citizens;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-import sud.objects.CaseStuff.Case;
-
 public abstract class Citizen {
-    private String name;
+
+    protected String name;
+
     private String address;
+
     private int age;
-    private Case workingCase;
 
     public String getName() {
+
 	return name;
     }
 
@@ -21,19 +22,23 @@ public abstract class Citizen {
 	this.age = age;
     }
 
-    // public abstract String answerToJurist();
+    public boolean isAccused() {
+	return false;
+    }
 
-    public abstract boolean isAccused();
+    public boolean isAccuser() {
+	return false;
+    }
 
-    public abstract boolean isAccuser();
+    public boolean isWitness() {
+	return false;
+    }
 
-    public abstract boolean isWitness();
-
-    public static ArrayList<Accused> filterAccused(ArrayList<Citizen> citizens) {
-	ArrayList<Accused> accuseds = new ArrayList<>();
+    public static ArrayList<Defendant> filterAccused(ArrayList<Citizen> citizens) {
+	ArrayList<Defendant> accuseds = new ArrayList<>();
 	for (Citizen citizen : citizens) {
 	    if (citizen.isAccused()) {
-		accuseds.add((Accused) citizen);
+		accuseds.add((Defendant) citizen);
 	    }
 	}
 	return accuseds;
@@ -60,10 +65,10 @@ public abstract class Citizen {
 	return witnesses;
     }
 
-    public static Accused getRandomAccused(ArrayList<Citizen> citizens) {
+    public static Defendant getRandomDefendant(ArrayList<Citizen> citizens) {
 	Random rnd = new Random();
-	ArrayList<Accused> accuseds = filterAccused(citizens);
-	Accused randomAccused = accuseds.get(rnd.nextInt(accuseds.size()));
+	ArrayList<Defendant> accuseds = filterAccused(citizens);
+	Defendant randomAccused = accuseds.get(rnd.nextInt(accuseds.size()));
 	return randomAccused;
     }
 

@@ -1,11 +1,20 @@
-package sud.objects.JuristStuff;
+package sud.objects.jutists;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-public abstract class Jurist {
+import sud.interfaces.IAskQuestions;
+import sud.interfaces.ITakeNotes;
+import sud.objects.citizens.Citizen;
+
+public abstract class Jurist implements IAskQuestions, ITakeNotes {
+
+    public static int questionsJurist = 0;
+
     protected String name;
+
     protected int yearsExperience;
+
     private int numberOfCases;
 
     public Jurist(String name, int yearsExperience, int numberOfCases) {
@@ -14,21 +23,37 @@ public abstract class Jurist {
 	this.numberOfCases = numberOfCases;
     }
 
-    public void increaseWoringCases() {
+    public void increaseCases() {
 	this.numberOfCases++;
     }
 
-    // public abstract void ask(Citizen citizen);
+    public void askQuestion(Citizen citizen, int numberOfQuestion) {
+	for (int i = 0; i < numberOfQuestion; i++) {
+	    System.out.println(this.name + " ask question" + (i + 1) + " to " + citizen.getName());
+	    this.takeNotes();
+	    questionsJurist++;
+	}
+    }
 
-    // public abstract void takeNotes();
+    public void takeNotes() {
+	System.out.println(this.name + " take notes");
+    }
 
-    public abstract boolean isJudge();
+    public boolean isJudge() {
+	return false;
+    }
 
-    public abstract boolean isLawyer();
+    public boolean isLawyer() {
+	return false;
+    }
 
-    public abstract boolean isJuror();
+    public boolean isJuror() {
+	return false;
+    }
 
-    public abstract boolean isProsecutor();
+    public boolean isProsecutor() {
+	return false;
+    }
 
     public static ArrayList<Judge> filterJudges(ArrayList<Jurist> jurists) {
 	ArrayList<Judge> judges = new ArrayList<>();
