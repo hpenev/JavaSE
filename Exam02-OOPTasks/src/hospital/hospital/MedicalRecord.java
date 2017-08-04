@@ -1,4 +1,4 @@
-package hospital;
+package hospital.hospital;
 
 public class MedicalRecord {
     private String name;
