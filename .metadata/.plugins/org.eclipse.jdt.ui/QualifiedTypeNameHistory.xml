@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="hospital.Department"/>
-<fullyQualifiedTypeName name="hospital.Person"/>
-<fullyQualifiedTypeName name="hospital.MedicalRecord"/>
-<fullyQualifiedTypeName name="javax.print.Doc"/>
-<fullyQualifiedTypeName name="hospital.persons.Medicine"/>
-<fullyQualifiedTypeName name="java.awt.event.MouseWheelEvent"/>
-<fullyQualifiedTypeName name="hospital.persons.Nurse"/>
-<fullyQualifiedTypeName name="hospital.persons.Person"/>
-<fullyQualifiedTypeName name="java.util.Queue"/>
-<fullyQualifiedTypeName name="java.util.LinkedList"/>
-<fullyQualifiedTypeName name="javax.print.attribute.standard.MediaSize.Other"/>
-<fullyQualifiedTypeName name="hospital.departments.Orthopedy"/>
 <fullyQualifiedTypeName name="hospital.departments.Virology"/>
 <fullyQualifiedTypeName name="hospital.persons.Doctor"/>
 <fullyQualifiedTypeName name="hospital.Hospital"/>
@@ -21,7 +9,6 @@
 <fullyQualifiedTypeName name="hospital.departments.Department"/>
 <fullyQualifiedTypeName name="hospital.departments.Cardiology"/>
 <fullyQualifiedTypeName name="hospital.persons.HealingPlan"/>
-<fullyQualifiedTypeName name="hospital.persons.Patient"/>
 <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.HTMLReader.ParagraphAction"/>
 <fullyQualifiedTypeName name="java.lang.InstantiationError"/>
 <fullyQualifiedTypeName name="javax.imageio.spi.IIOServiceProvider"/>
@@ -49,7 +36,6 @@
 <fullyQualifiedTypeName name="java.security.AlgorithmParameterGenerator"/>
 <fullyQualifiedTypeName name="imoti.Agency"/>
 <fullyQualifiedTypeName name="imoti.persons.Seller"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="imoti.properties.House"/>
 <fullyQualifiedTypeName name="java.awt.RadialGradientPaint"/>
 <fullyQualifiedTypeName name="imoti.properties.ConstructionType"/>
@@ -60,4 +46,18 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="imoti.persons.Agent"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="library.Book"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="library.books.Book"/>
+<fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+<fullyQualifiedTypeName name="exceptions.ProductException"/>
+<fullyQualifiedTypeName name="hospital.persons.Patient"/>
+<fullyQualifiedTypeName name="hospital_v1.hospital.Person"/>
+<fullyQualifiedTypeName name="hospital_v1.hospital.Doctor"/>
+<fullyQualifiedTypeName name="hospital_v1.wardSection.Cardiology"/>
+<fullyQualifiedTypeName name="hospital_v1.wardSection.Virology"/>
+<fullyQualifiedTypeName name="hospital_v1.hospital.Nurse"/>
+<fullyQualifiedTypeName name="hospital_v1.patient.Patient"/>
+<fullyQualifiedTypeName name="hospital_v1.wardSection.Ward"/>
 </qualifiedTypeNameHistroy>
