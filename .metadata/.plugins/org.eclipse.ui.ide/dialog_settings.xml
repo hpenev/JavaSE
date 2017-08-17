@@ -16,7 +16,7 @@
 		<item value="260" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="ExternalProjectImportWizard">
-		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
@@ -36,6 +36,8 @@
 		<item value="283" key="DIALOG_HEIGHT"/>
 		<item value="607" key="DIALOG_X_ORIGIN"/>
 		<item value="420" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">
 		<item value="381" key="DIALOG_X_ORIGIN"/>
