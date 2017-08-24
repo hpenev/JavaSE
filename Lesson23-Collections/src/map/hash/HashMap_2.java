@@ -28,12 +28,25 @@ public class HashMap_2 {
 	map.put("B", valSetTwo);
 	map.put("C", valSetThree);
 	// iterate and display values
-	System.out.println("Fetching Keys and corresponding [Multiple] Values n");
+
+	System.out.println("Fetching Keys and corresponding [Multiple] Values");
 	for (Map.Entry<String, List<String>> entry : map.entrySet()) {
 	    String key = entry.getKey();
 	    List<String> values = entry.getValue();
-	    System.out.println("Key = " + key);
-	    System.out.println("Values = " + values + "n");
+	    System.out.println(key + " -> " + values);
+	}
+	System.out.println();
+	System.out.println("Adding a word Ananas");
+	System.out.println();
+
+	List<String> aList = map.get("A");
+	aList.add("Ananas");
+	map.put("A", aList);
+
+	for (Map.Entry<String, List<String>> entry : map.entrySet()) {
+	    String key = entry.getKey();
+	    List<String> values = entry.getValue();
+	    System.out.println(key + " -> " + values);
 	}
     }
 }
