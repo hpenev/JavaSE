@@ -17,7 +17,7 @@ public class Demo {
 	ArrayList<Driver> drivers = new ArrayList<>();
 
 	for (int i = 0; i < 20; i++) {
-	    Driver driver = new Driver(new Random().nextInt(1200) + 200);
+	    Driver driver = new Driver(new Random().nextInt(15000) + 5000);
 	    driver.setPetrolStation(petrolStation);
 	    drivers.add(driver);
 	}

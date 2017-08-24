@@ -3,7 +3,6 @@ package vinetki;
 import java.util.LinkedList;
 import java.util.Random;
 
-import vinetki.vehicles.Vehicle;
 import vinetki.vehicles.VehicleType;
 import vinetki.vignetes.DaylyVignette;
 import vinetki.vignetes.MontlyVignette;
@@ -62,13 +61,12 @@ public class PetrolStation {
 	}
     }
 
-    public Vignette buyVignette(double money) {
-
-	return null;
-    }
-
-    public Vignette buyVignette(Vehicle vehicle, VignetePeriod period) {
-
+    public Vignette buyVignette(VehicleType vehicleType, VignetePeriod period) {
+	for (Vignette vignette : vignettes) {
+	    if (vignette.getVehicleType() == vehicleType && period == vignette.getPeriod()) {
+		return vignette;
+	    }
+	}
 	return null;
     }
 

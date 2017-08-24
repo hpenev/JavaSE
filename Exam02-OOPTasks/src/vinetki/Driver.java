@@ -22,7 +22,7 @@ public class Driver {
     }
 
     private void buyVignete(Vehicle vehicle) {
-	Vignette vignette = petrolStation.buyVignette(vehicle, getRandomVignettePeriod());
+	Vignette vignette = petrolStation.buyVignette(vehicle.getVehicleType(), getRandomVignettePeriod());
 	this.petrolStation.payForVignette(vignette);
 	this.money -= vignette.getPrice();
 
@@ -71,6 +71,7 @@ public class Driver {
 
     @Override
     public String toString() {
+
 	StringBuilder stringBuilder = new StringBuilder();
 	stringBuilder.append("Driver has: ");
 	stringBuilder.append("\n");
