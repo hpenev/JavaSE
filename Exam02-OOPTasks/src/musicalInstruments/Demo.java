@@ -35,6 +35,8 @@ public class Demo {
 	magazine.supplyInstrument(new Winds("Clarinet"), 3);
 
 	magazine.sellInstrument("Synthesizer", 3);
+	magazine.sellInstrument("Trumpet", 2);
+	magazine.sellInstrument("Contrabass", 1);
 
 	magazine.viewCatalogByType();
 	System.out.println();
@@ -43,6 +45,15 @@ public class Demo {
 	magazine.viewCatalogByPrice(false);
 	System.out.println();
 	magazine.viewInstrumentsInStock();
+	System.out.println();
+	magazine.showSelledInstrument();
+	System.out.println();
+	magazine.showProfit();
+	System.out.println();
+	magazine.showBestSeller();
+	System.out.println();
+	magazine.showMostNotSellingProduct();
+	System.out.println();
 
     }
 }

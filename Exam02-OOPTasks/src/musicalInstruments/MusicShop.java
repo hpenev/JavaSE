@@ -1,7 +1,10 @@
 package musicalInstruments;
 
 import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.Map;
 import java.util.Map.Entry;
+import java.util.SortedSet;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
@@ -9,6 +12,7 @@ import musicalInstruments.instruments.Instrument;
 
 public class MusicShop {
 
+    private double profit;
     private double cash;
     private TreeMap<Instrument, Integer> catalogue;
     private TreeMap<Instrument, Integer> selledInstruments;
@@ -41,7 +45,8 @@ public class MusicShop {
 		    System.out.println("SOLD: " + number + " " + instrument);
 		    entry.setValue(entry.getValue() - number);
 		    this.cash += instrument.getPrice() * number;
-		    selledInstruments.put(instrument, number);
+		    this.profit += instrument.getPrice() * number;
+		    this.selledInstruments.put(instrument, number);
 		    return;
 		} else {
 		    System.out.println("not enough in stock");
@@ -150,4 +155,49 @@ public class MusicShop {
 		    + instrument.getPrice());
 	}
     }
+
+    public void showSelledInstrument() {
+	SortedSet<Map.Entry<Instrument, Integer>> sortedSet = MusicShop.entriesSortedByValues(this.selledInstruments);
+
+	for (Entry<Instrument, Integer> entry : sortedSet) {
+	    System.out.println(entry.getKey().getName() + "->" + entry.getValue() + "pcs");
+
+	}
+    }
+
+    public void showProfit() {
+	System.out.println("Total earnings: " + this.profit);
+    }
+
+    static <K, V extends Comparable<? super V>> SortedSet<Map.Entry<K, V>> entriesSortedByValues(Map<K, V> map) {
+	SortedSet<Map.Entry<K, V>> sortedEntries = new TreeSet<Map.Entry<K, V>>(
+		new Comparator<Map.Entry<K, V>>() {
+		    @Override
+		    public int compare(Map.Entry<K, V> e1, Map.Entry<K, V> e2) {
+			int res = e1.getValue().compareTo(e2.getValue());
+			return res != 0 ? res : 1;
+		    }
+		});
+	sortedEntries.addAll(map.entrySet());
+	return sortedEntries;
+    }
+
+    public void showBestSeller() {
+	LinkedList<Instrument> topSeller = new LinkedList<>();
+	SortedSet<Map.Entry<Instrument, Integer>> sortedSet = MusicShop.entriesSortedByValues(this.selledInstruments);
+	for (Entry<Instrument, Integer> entry : sortedSet) {
+	    topSeller.add(entry.getKey());
+	}
+	System.out.println("TopSeller: " + topSeller.getLast());
+    }
+
+    public void showMostNotSellingProduct() {
+	LinkedList<Instrument> topSeller = new LinkedList<>();
+	SortedSet<Map.Entry<Instrument, Integer>> sortedSet = MusicShop.entriesSortedByValues(this.selledInstruments);
+	for (Entry<Instrument, Integer> entry : sortedSet) {
+	    topSeller.add(entry.getKey());
+	}
+	System.out.println("Most Not Selling: " + topSeller.getFirst());
+    }
+
 }
