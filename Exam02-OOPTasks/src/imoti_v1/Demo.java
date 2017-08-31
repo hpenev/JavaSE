@@ -1,13 +1,15 @@
+package imoti_v1;
+
 import java.util.ArrayList;
 import java.util.Random;
 
-import agency.Agency;
-import clients.Buyer;
-import clients.Seller;
-import properties.Apartment;
-import properties.House;
-import properties.Parcel;
-import properties.Property;
+import imoti_v1.agency.Agency;
+import imoti_v1.clients.Buyer;
+import imoti_v1.clients.Seller;
+import imoti_v1.properties.Apartment;
+import imoti_v1.properties.House;
+import imoti_v1.properties.Parcel;
+import imoti_v1.properties.Property;
 
 public class Demo {
     public static void main(String[] args) {
