@@ -1,6 +1,6 @@
 package map.tree;
 
-import java.util.Map;
+import java.util.Map.Entry;
 import java.util.TreeMap;
 
 public class TreeMapCollection {
@@ -11,7 +11,7 @@ public class TreeMapCollection {
 	hm.put(102, "Dragan");
 	hm.put(101, "Petkan");
 
-	for (Map.Entry m : hm.entrySet()) {
+	for (Entry<Integer, String> m : hm.entrySet()) {
 	    System.out.println(m.getKey() + " " + m.getValue());
 	}
 
@@ -19,7 +19,7 @@ public class TreeMapCollection {
 
 	System.out.println("~~~~~~~~~~~~~~~~~");
 
-	for (Map.Entry entry : hm.entrySet()) {
+	for (Entry<Integer, String> entry : hm.entrySet()) {
 	    System.out.println(entry.getKey() + " " + entry.getValue());
 	}
     }

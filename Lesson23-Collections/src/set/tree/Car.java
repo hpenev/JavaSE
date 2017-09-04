@@ -15,6 +15,10 @@ public class Car implements Comparable<Car> {
 
     @Override
     public int compareTo(Car c) {
+	/*
+	 * if (this.color.equals(c.color)) { return this.name.compareTo(c.name);
+	 * }
+	 */
 	return this.color.compareTo(c.color);
     }
 
