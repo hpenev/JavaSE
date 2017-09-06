@@ -13,13 +13,11 @@ public class bubbleSort {
     }
 
     private static void bubbleSortMoreOptimized(int[] array) {
-	int counter = 0;
 	for (int i = 0; i < array.length; i++) {
 	    boolean isSorted = true;
 	    // znaem 4e pri pyrvata iteraciq nai golemiq element otiva nai otzad
 	    // zatova pri slevashto iterirane namalqvame s 1 element.
 	    for (int j = 0; j < array.length - 1 - i; j++) {
-		counter++;
 		if (array[j] > array[j + 1]) {
 		    int temp = array[j];
 		    array[j] = array[j + 1];
@@ -31,8 +29,6 @@ public class bubbleSort {
 		break;
 	    }
 	}
-	System.out.println("Operations = " + counter);
-
     }
 
     private static void bubbleSortOptimized(int[] array) {
