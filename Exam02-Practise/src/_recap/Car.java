@@ -1,7 +1,24 @@
 package _recap;
 
+import java.util.*;
+
 public class Car extends Vehicle implements IStaticMethod {
+
+    private String model;
+
     public Car() {
+
+    }
+
+    public static void makeNoise() {
+	HashMap<String, Integer> test = new HashMap<>();
+	ArrayList<Integer> list = new ArrayList<>();
+	list.add(1);
+	list.add(2);
+	list.add(3);
+
+	list.remove(2);
+	list.remove(Integer.valueOf(2));
 
     }
 

@@ -6,4 +6,8 @@ public class Vehicle {
 	return null;
     }
 
+    private void makeNoise() {
+
+    }
+
 }

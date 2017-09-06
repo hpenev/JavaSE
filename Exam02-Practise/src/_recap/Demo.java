@@ -10,6 +10,12 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 public class Demo {
+
+    static {
+	System.out.println("Static block");
+
+    }
+
     public static void main(String[] args) {
 
 	// whatIsOutput();
@@ -100,6 +106,7 @@ public class Demo {
 	while (iterator.hasNext()) {
 	    if (iterator.next().equals(2)) {
 		iterator.remove();
+		// iterator.add(88);
 		integeres.add(88);
 	    }
 	}
