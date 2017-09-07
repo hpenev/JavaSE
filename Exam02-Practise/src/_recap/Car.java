@@ -1,13 +1,14 @@
 package _recap;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Car extends Vehicle implements IStaticMethod {
 
     private String model;
 
     public Car() {
-
+	super();
     }
 
     public static void makeNoise() {

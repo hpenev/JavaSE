@@ -17,6 +17,12 @@ public class Demo {
     }
 
     public static void main(String[] args) {
+	boolean b = true;
+	byte bytes = (byte) b;
+	float x = 1.2f;
+	double y = 2.4;
+
+	System.out.println(x > y);
 
 	// whatIsOutput();
 
