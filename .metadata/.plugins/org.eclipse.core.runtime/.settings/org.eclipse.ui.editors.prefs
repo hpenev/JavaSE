@@ -31,7 +31,6 @@ searchResultIndication=true
 searchResultIndicationColor=94,94,94
 searchResultTextStyle=BOX
 secondaryIPColor=54,54,54
-spellingEnabled=false
 spellingIndicationColor=253,170,211
 warningIndicationColor=156,114,3
 warningIndicationHighlighting=true
